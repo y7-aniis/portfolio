@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>WEGO — Qiuyan Lai</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Ubuntu+Mono&amp;display=swap" rel="stylesheet"/><link href="dnd-story.css?v=7" rel="stylesheet"/><link href="wego.css?v=17" rel="stylesheet"/><link rel="stylesheet" href="case-navigation.css?v=1"><link rel="stylesheet" href="eye-language.css?v=2"></head><body><aside class="eye-language" aria-label="Language selection"><div class="eye-shell"><svg class="eye-outline" viewBox="0 0 120 66" aria-hidden="true"><defs><pattern id="eye-grain" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx=".8" cy="1" r=".65" fill="#777"/><circle cx="3" cy="3" r=".4" fill="#999"/></pattern><filter id="eye-rough" x="-15%" y="-30%" width="130%" height="160%"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="2" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" xChannelSelector="R" yChannelSelector="G"/></filter></defs><path class="eye-paper" d="M3 33Q60 -23 117 33Q60 89 3 33Z"/><path class="eye-grain-outline" d="M3 33Q60 -23 117 33Q60 89 3 33Z" filter="url(#eye-rough)"/></svg><span class="eye-pupil" aria-hidden="true"></span><button type="button" data-lang="en" aria-label="Switch to English" aria-pressed="true">EN</button><button type="button" data-lang="zh" aria-label="切换为中文" aria-pressed="false">CN</button></div><span class="eye-hint" aria-hidden="true">Language</span></aside><header><a class="brand" href="index.html"><img alt="Qiuyan Lai home" src="assets/dnd/09c96.png"/></a><div class="header-actions"><nav aria-label="Main navigation"><a href="index.html#work">WORK</a><a href="index.html#about">ABOUT</a><a href="index.html#contact">CONTACT</a></nav></div></header><main><div class="wego-hero-transition"><section class="wego-hero" aria-labelledby="wego-title"><div class="wego-hero-text"><h1 id="wego-title">WEGO</h1><p class="wego-subtitle" data-en="From discovering campus activities to making meaningful connections." data-zh="从发现校园活动，到建立有意义的联系。">From discovering campus activities to making meaningful connections.</p><p class="wego-introduction" data-en="A campus companion that helps students discover events, find like-minded peers and take part together." data-zh="帮助大学生发现活动、找到志同道合的同伴，并一起参与校园生活的应用。">A campus companion that helps students discover events, find like-minded peers and take part together.</p><div class="wego-tags"><span class="" data-en="UX Research" data-zh="用户研究">UX Research</span><span class="" data-en="UI Design" data-zh="界面设计">UI Design</span><span class="" data-en="Interaction Design" data-zh="交互设计">Interaction Design</span><span class="" data-en="Usability Testing" data-zh="可用性测试">Usability Testing</span></div></div><div class="wego-screens"><div class="wego-screen" style="left:0%;top:17.74%;width:29.04%;height:82.26%;z-index:1"><img alt="WEGO prototype screen 1" src="assets/wego/55f82.png" style="width:100.26%;height:100.78%;left:-.13%;top:-.78%"/></div><div class="wego-screen" style="left:18.71%;top:10.26%;width:25.91%;height:88.75%;z-index:2"><img alt="WEGO prototype screen 2" src="assets/wego/a9ee3.png" style="width:100%;height:100.89%;left:0%;top:-.89%"/></div><div class="wego-screen" style="left:33.78%;top:0%;width:36.57%;height:98.29%;z-index:5"><img alt="WEGO prototype screen 3" src="assets/wego/92778.png" style="width:100%;height:106.27%;left:0%;top:-.05%"/></div><div class="wego-screen" style="left:56.5%;top:10.26%;width:30.29%;height:91.75%;z-index:3"><img alt="WEGO prototype screen 4" src="assets/wego/d2c48.png" style="width:100%;height:100%;left:0%;top:0%"/></div><div class="wego-screen" style="left:76.79%;top:20.3%;width:23.21%;height:77.99%;z-index:1"><img alt="WEGO prototype screen 5" src="assets/wego/75de3.png" style="width:100.14%;height:103.71%;left:-.07%;top:-.82%"/></div></div></section><canvas class="wego-hero-particles" aria-hidden="true"></canvas></div><nav class="chapter-nav case-chapter-nav" aria-label="Project sections"><a href="#challenge" data-en="Challenge" data-zh="挑战">Challenge</a><a href="#direction" data-en="Direction" data-zh="方向">Direction</a><a href="#discovery" data-en="Event buddies" data-zh="活动同伴">Event buddies</a><a href="#matching" data-en="Shared interests" data-zh="共同兴趣">Shared interests</a><a href="#onboarding" data-en="Onboarding" data-zh="注册与偏好">Onboarding</a><a href="#testing" data-en="Testing" data-zh="测试">Testing</a><a href="#reflection" data-en="Reflection" data-zh="反思">Reflection</a></nav><section class="wego-challenge" id="challenge"><p class="kicker" data-en="01 / THE CHALLENGE" data-zh="01 / 设计挑战">01 / THE CHALLENGE</p><h2 class="" data-en="The gap between finding an event and taking part" data-zh="从发现活动，到真正参与之间的距离">The gap between finding an event and taking part</h2><div class="participation-path"><figure class="path-end path-start"><div class="event-doodle"><img alt="Discovering campus events" src="assets/wego/8f2b2.png"/></div><figcaption class="" data-en="Find an event" data-zh="发现活动">Find an event</figcaption></figure><div class="barrier-steps"><div aria-hidden="true" class="path-line"><span></span></div><article class="barrier barrier-0"><div class="barrier-copy"><span class="barrier-number">01</span><h3 class="" data-en="Missed events" data-zh="错过活动">Missed events</h3><p class="" data-en="Fragmented information" data-zh="信息分散">Fragmented information</p></div><div aria-hidden="true" class="barrier-node"><img alt="" src="assets/wego/807c7.svg"/><img alt="" class="barrier-cross" src="assets/wego/555d8.svg"/></div></article><article class="barrier barrier-1"><div class="barrier-copy"><span class="barrier-number">02</span><h3 class="" data-en="Social hesitation" data-zh="社交顾虑">Social hesitation</h3><p class="" data-en="No companion to attend with" data-zh="没有一起参加的同伴">No companion to attend with</p></div><div aria-hidden="true" class="barrier-node"><img alt="" src="assets/wego/4e333.svg"/><img alt="" class="barrier-cross" src="assets/wego/555d8.svg"/></div></article><article class="barrier barrier-2"><div class="barrier-copy"><span class="barrier-number">03</span><h3 class="" data-en="Contact friction" data-zh="联系的阻力">Contact friction</h3><p class="" data-en="Unsure how to make the first move" data-zh="不知道如何迈出第一步">Unsure how to make the first move</p></div><div aria-hidden="true" class="barrier-node"><img alt="" src="assets/wego/5eab9.svg"/><img alt="" class="barrier-cross" src="assets/wego/555d8.svg"/></div></article><article class="barrier barrier-3"><div class="barrier-copy"><span class="barrier-number">04</span><h3 class="" data-en="Finding the venue" data-zh="找到场地">Finding the venue</h3><p class="" data-en="An unfamiliar place" data-zh="不熟悉活动地点">An unfamiliar place</p></div><div aria-hidden="true" class="barrier-node"><img alt="" src="assets/wego/71b5e.svg"/><img alt="" class="barrier-cross" src="assets/wego/555d8.svg"/></div></article></div><figure class="path-end path-finish"><div class="event-doodle"><img alt="Students joining an activity together" src="assets/wego/8f2b2.png"/></div><figcaption class="" data-en="Take part" data-zh="参与活动">Take part</figcaption></figure></div><div class="direction-shift"><p class="" data-en="We started with scattered event information. But finding an activity did not resolve every reason for missing it." data-zh="我们最初关注分散的活动信息，但找到活动，并不能解决所有缺席的原因。">We started with scattered event information. But finding an activity did not resolve every reason for missing it.</p><p class="" data-en="The direction grew to include social barriers: finding compatible companions through shared activities and interests." data-zh="因此，设计方向进一步关注参与中的社交障碍：通过共同活动和兴趣，找到合适的同伴。">The direction grew to include social barriers: finding compatible companions through shared activities and interests.</p></div><div class="wego-question"><p class="" data-en="How might we help university students find events they enjoy and connect with people to attend them with?" data-zh="如何帮助大学生发现喜欢的活动，并与可以一起参加的同伴建立联系？">How might we help university students find events they enjoy and connect with people to attend them with?</p></div></section><section class="wego-direction" id="direction"><p class="kicker" data-en="02 / DEVELOPING THE CONCEPT" data-zh="02 / 设计方向的形成">02 / DEVELOPING THE CONCEPT</p><h2 class="" data-en="Finding an event was only part of the problem." data-zh="找到活动，只解决了一部分问题。">Finding an event was only part of the problem.</h2><div class="direction-layout"><div class="direction-story"><article class="direction-step"><span class="step-index">01</span><h3 class="" data-en="An easier way to find events" data-zh="让活动更容易被发现">An easier way to find events</h3><p class="" data-en="Event information was scattered across emails, social media and university websites. Our starting point was to bring discovery into one place." data-zh="活动信息分散在邮件、社交媒体和学校网站中。最初，我们希望把活动发现整合到一个地方。">Event information was scattered across emails, social media and university websites. Our starting point was to bring discovery into one place.</p></article><article class="direction-step"><span class="step-index">02</span><h3 class="" data-en="Who would I go with?" data-zh="我可以和谁一起去？">Who would I go with?</h3><p class="" data-en="We expanded the concept to address the social side of participation: finding a suitable companion and getting to know them before meeting." data-zh="我们把设计延伸到参与活动的社交层面：寻找合适的同伴，并在见面前了解对方。">We expanded the concept to address the social side of participation: finding a suitable companion and getting to know them before meeting.</p></article><article class="direction-step"><span class="step-index">03</span><h3 class="" data-en="Two ways to find a companion" data-zh="通过两条路径寻找同伴">Two ways to find a companion</h3><p class="" data-en="Matching only within one event could leave students with too few choices. We added shared interests as another way to discover compatible people." data-zh="仅在同一活动中匹配，可能让学生的选择过少。因此，我们加入共同兴趣，作为寻找合适同伴的另一条路径。">Matching only within one event could leave students with too few choices. We added shared interests as another way to discover compatible people.</p></article></div><div class="connection-board"><div class="connection-map"><p class="map-origin" data-en="A campus activity" data-zh="一场校园活动">A campus activity</p><div aria-hidden="true" class="map-stem"></div><div class="map-routes"><div class="map-route event-route"><span class="route-label" data-en="Shared activity" data-zh="共同活动">Shared activity</span><p class="" data-en="People going to the same event" data-zh="参加同一活动的人">People going to the same event</p></div><div class="map-route interest-route"><span class="route-label" data-en="Shared interests" data-zh="共同兴趣">Shared interests</span><p class="" data-en="People who enjoy similar things" data-zh="拥有相近兴趣的人">People who enjoy similar things</p></div></div><div aria-hidden="true" class="map-join"></div><p class="map-result" data-en="Find someone to go with" data-zh="找到可以同行的伙伴">Find someone to go with</p></div><div class="direction-preview"><img alt="WEGO event discovery interface" loading="lazy" src="assets/wego/92778.png"/><div><p class="preview-label" data-en="THE DESIGN DIRECTION" data-zh="设计方向">THE DESIGN DIRECTION</p><p class="" data-en="Activities and interests become a starting point for connection." data-zh="以活动与兴趣为起点，建立人与人的联系。">Activities and interests become a starting point for connection.</p></div></div></div></div></section><section class="wego-discovery" id="discovery"><p class="kicker" data-en="03 / DESIGN SOLUTIONS" data-zh="03 / 设计方案">03 / DESIGN SOLUTIONS</p><div class="solution-routes"><a class="" data-en="01 · Find a buddy for an event" data-zh="01 · 在同一活动里寻找同伴" href="#discovery">01 · Find a buddy for an event</a><a class="" data-en="02 · Find a buddy through interests" data-zh="02 · 通过共同兴趣寻找同伴" href="#matching">02 · Find a buddy through interests</a></div><h2 class="" data-en="01 / Find a buddy for an event" data-zh="01 / 在同一活动里寻找同伴">01 / Find a buddy for an event</h2><p class="discovery-intro" data-en="Start with an event you want to attend, then find someone going too." data-zh="先找到想参加的活动，再寻找一起参加的同伴。">Start with an event you want to attend, then find someone going too.</p><div class="discovery-layout"><div class="discovery-story"><article class="discovery-step" data-discovery-step="0"><span class="discovery-index">01</span><h3 class="" data-en="Browse what’s happening" data-zh="看看有哪些活动">Browse what’s happening</h3><p class="" data-en="Event cards bring the activity, time, location and cost together, so students can compare options before opening a full description." data-zh="活动卡片集中展示内容、时间、地点和费用，帮助学生在打开详情前比较不同选择。">Event cards bring the activity, time, location and cost together, so students can compare options before opening a full description.</p></article><article class="discovery-step" data-discovery-step="1"><span class="discovery-index">02</span><h3 class="" data-en="Know what to expect" data-zh="了解活动，再做决定">Know what to expect</h3><p class="" data-en="The detail page keeps practical information close to the description. “Good to know” tags add context, such as whether newcomers are welcome and where to meet." data-zh="详情页把实用信息与活动介绍放在一起。“Good to know” 标签补充是否欢迎新参与者、在哪里集合等信息。">The detail page keeps practical information close to the description. “Good to know” tags add context, such as whether newcomers are welcome and where to meet.</p></article><article class="discovery-step" data-discovery-step="2"><span class="discovery-index">03</span><h3 class="" data-en="Find someone going to the same event" data-zh="寻找参加同一活动的人">Find someone going to the same event</h3><p class="" data-en="Students can join the event or look for a buddy from the same page. Finding a companion stays connected to the activity they are interested in." data-zh="学生可以在同一页面选择加入活动或寻找同伴，让寻找伙伴与感兴趣的活动保持联系。">Students can join the event or look for a buddy from the same page. Finding a companion stays connected to the activity they are interested in.</p></article></div><div class="discovery-demo"><div class="discovery-phones"><figure class="discovery-phone browse-phone"><div class="phone-art"><img alt="WEGO activity browsing screen" loading="lazy" src="assets/wego/discover-events.png"/><span aria-hidden="true" class="screen-emphasis browse-emphasis"></span></div><figcaption class="" data-en="Discover events" data-zh="浏览活动">Discover events</figcaption></figure><figure class="discovery-phone detail-phone"><div class="phone-art"><img alt="WEGO Melbourne Night Market details screen" loading="lazy" src="assets/wego/event-details.png"/><span aria-hidden="true" class="screen-emphasis detail-emphasis"></span></div><figcaption class="" data-en="Explore the details" data-zh="查看详情">Explore the details</figcaption></figure></div><div aria-label="Explore design decisions" class="discovery-controls"><button aria-pressed="true" data-demo-step="0" data-en="Browse" data-zh="浏览" type="button">Browse</button><button aria-pressed="false" data-demo-step="1" data-en="Details" data-zh="详情" type="button">Details</button><button aria-pressed="false" data-demo-step="2" data-en="Take part" data-zh="参与" type="button">Take part</button></div></div></div><div class="event-buddy-context"><div><h3 class="" data-en="The event gives you something in common" data-zh="同一场活动，就是共同话题">The event gives you something in common</h3><p class="" data-en="From the event’s Find Buddy entry, students can explore a potential companion’s profile before connecting." data-zh="从活动中的 Find Buddy 入口，查看潜在同伴的资料，再决定是否联系。">From the event’s Find Buddy entry, students can explore a potential companion’s profile before connecting.</p></div><figure><img alt="WEGO profile with shared interests highlighted" src="assets/wego/shared-interests.png"/><figcaption data-en="Shared interests stay visible when viewing a profile." data-zh="浏览个人资料时，共同兴趣仍然清晰可见。">Shared interests stay visible when viewing a profile.</figcaption></figure></div></section><section class="wego-matching interest-route-section" id="matching"><p class="kicker" data-en="DESIGN SOLUTIONS / SECOND PATH" data-zh="设计方案 / 第二条路径">DESIGN SOLUTIONS / SECOND PATH</p><h2 class="" data-en="02 / Find a buddy through interests" data-zh="02 / 通过共同兴趣寻找同伴">02 / Find a buddy through interests</h2><p class="interest-route-intro" data-en="Start with someone who shares your interests, get to know each other, then plan an event together." data-zh="先找到兴趣相投的人，了解彼此，再约定一起参加活动。">Start with someone who shares your interests, get to know each other, then plan an event together.</p><div class="buddy-film"><div class="film-story"><p class="kicker" data-en="WATCH THE USER FLOW" data-zh="观看用户流程">WATCH THE USER FLOW</p><h3 data-en="From shared interests to a conversation" data-zh="从共同兴趣，到开始交流">From shared interests to a conversation</h3><ol class="film-steps"><li><span data-en="Find shared interests" data-zh="发现共同兴趣">Find shared interests</span></li><li><span data-en="View Mia’s profile" data-zh="查看 Mia 的资料">View Mia’s profile</span></li><li><span data-en="Introduce yourself" data-zh="介绍自己">Introduce yourself</span></li><li><span data-en="Swipe to send" data-zh="滑动发送">Swipe to send</span></li><li><span data-en="Continue in Messages" data-zh="进入消息界面">Continue in Messages</span></li></ol><div class="film-controls"><button class="film-try" data-en="Try it yourself" data-zh="亲自体验" type="button">Try it yourself</button></div></div><div class="film-device"><div class="film-phone"><img alt="" aria-hidden="true" class="film-frame-art" src="assets/wego/shared-interests.png"/><div class="film-glass"><div class="film-canvas interest-screen"><div class="film-scene" data-scene="0"><div data-name="interest match" data-node-id="587:2568" style="position:relative;background:#fbf7ed;height:844px;overflow:hidden;border-radius:50px;width:390px">
+<div data-node-id="587:2569" style="position:absolute;background:white;height:24px;left:16px;border-radius:99px;top:120px;width:358px"></div>
+<div data-node-id="587:2570" style="position:absolute;background:#fada75;height:24px;left:16px;border-radius:99px;top:120px;width:193px"></div>
+<p data-node-id="587:2571" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:600;height:18px;line-height:normal;left:37px;font-size:16px;color:black;top:122px;letter-spacing:0.48px;width:145px">
+          Shared Interests
+        </p>
+<p data-node-id="587:2572" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:600;height:16px;line-height:normal;left:calc(50% + 53px);color:#454543;font-size:16px;top:122px;letter-spacing:0.48px;width:74px">
+          Near You
+        </p>
+<div data-name="home bar" data-node-id="587:2573" style="position:absolute;height:92.31px;left:-1px;top:752px;width:391px">
+<div data-node-id="587:2574" style="position:absolute;inset:0 0.26% 0 0">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ff5d0.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="587:2575" style="position:absolute;display:contents;inset:34.67% 79.28% 16.59% 12.53%">
+<div data-name="Vector" data-node-id="587:2576" style="position:absolute;inset:34.67% 79.96% 36.76% 13.3%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/7da51.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2577" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;inset:70.42% 79.28% 16.59% 12.53%;line-height:normal;font-style:normal;font-size:10px;text-align:center;color:white;letter-spacing:0.3px">
+              Home
+            </p>
+</div>
+<div data-node-id="587:2578" style="position:absolute;display:contents;inset:36.83% 45.78% 16.59% 45.27%">
+<div data-name="Frame" data-node-id="587:2579" style="position:absolute;inset:36.83% 47.06% 35% 46.29%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/78120.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2582" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:70.42% 45.78% 16.59% 45.27%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+              People
+            </p>
+</div>
+<div data-node-id="587:2583" style="position:absolute;display:contents;inset:35.75% 10.49% 18.75% 76.21%">
+<div data-name="Vector" data-node-id="587:2584" style="position:absolute;inset:41.85% 13.1% 41.54% 82.9%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/6cc61.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Vector" data-node-id="587:2585" style="position:absolute;inset:35.75% 15.33% 46.27% 80.31%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/c6389.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2586" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:68.25% 10.49% 18.75% 76.21%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+              Messages
+            </p>
+</div>
+<div data-node-id="587:2587" style="position:absolute;display:contents;inset:0 0 0 0.26%">
+<div data-node-id="587:2588" style="position:absolute;inset:0 0 0 0.26%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ff5d0.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="587:2589" style="position:absolute;display:contents;inset:34.67% 79.03% 16.59% 12.79%">
+<div data-name="Vector" data-node-id="587:2590" style="position:absolute;inset:34.67% 79.7% 36.76% 13.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/7da51.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2591" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;inset:70.42% 79.03% 16.59% 12.79%;line-height:normal;font-style:normal;font-size:10px;text-align:center;color:white;letter-spacing:0.3px">
+                Home
+              </p>
+</div>
+<div data-node-id="587:2592" style="position:absolute;display:contents;inset:36.83% 45.52% 16.59% 45.52%">
+<div data-name="Frame" data-node-id="587:2593" style="position:absolute;inset:36.83% 46.8% 35% 46.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/78120.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2596" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:70.42% 45.52% 16.59% 45.52%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                People
+              </p>
+</div>
+<div data-node-id="587:2597" style="position:absolute;display:contents;inset:35.75% 10.23% 18.75% 76.47%">
+<div data-name="Vector" data-node-id="587:2598" style="position:absolute;inset:41.85% 12.84% 41.54% 83.15%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/6cc61.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Vector" data-node-id="587:2599" style="position:absolute;inset:35.75% 15.08% 46.27% 80.56%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/c6389.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2600" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:68.25% 10.23% 18.75% 76.47%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                Messages
+              </p>
+</div>
+<div data-node-id="587:2601" style="position:absolute;display:contents;inset:0 0 0 0.26%">
+<div data-node-id="587:2602" style="position:absolute;inset:0 0 0 0.26%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ff5d0.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="587:2603" style="position:absolute;display:contents;inset:34.67% 79.03% 16.59% 12.79%">
+<div data-name="Vector" data-node-id="587:2604" style="position:absolute;inset:34.67% 79.7% 36.76% 13.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/84fca.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2605" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;inset:70.42% 79.03% 16.59% 12.79%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                  Home
+                </p>
+</div>
+<div data-node-id="587:2606" style="position:absolute;display:contents;inset:36.83% 42.46% 16.59% 42.46%">
+<div data-name="Frame" data-node-id="587:2607" style="position:absolute;inset:36.83% 46.8% 35% 46.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/a98c6.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2610" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:70.42% 42.46% 16.59% 42.46%;line-height:normal;font-style:normal;font-size:10px;text-align:center;color:white;letter-spacing:0.3px">
+                  Find Buddy
+                </p>
+</div>
+<div data-node-id="587:2611" style="position:absolute;display:contents;inset:35.75% 10.23% 18.75% 76.47%">
+<div data-name="Vector" data-node-id="587:2612" style="position:absolute;inset:41.85% 12.84% 41.54% 83.15%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/6cc61.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Vector" data-node-id="587:2613" style="position:absolute;inset:35.75% 15.08% 46.27% 80.56%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/c6389.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2614" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:68.25% 10.23% 18.75% 76.47%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                  Messages
+                </p>
+</div>
+</div>
+</div>
+</div>
+<div data-name="Component 7" data-node-id="587:2615" style="position:absolute;height:37px;left:calc(25% + 18.5px);top:678px;width:159px">
+<div data-node-id="I587:2615;1062:1027" style="position:absolute;background:black;cursor:pointer;inset:0;border-radius:20px;box-shadow:0px 4px 4px 0px rgba(0,0,0,0.25)"></div>
+<p data-node-id="I587:2615;1062:1028" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:600;inset:27.03% 15.09% 27.03% 15.72%;line-height:normal;font-size:15px;text-align:center;color:white">
+            Send
+          </p>
+</div>
+<p data-node-id="587:2616" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;height:56px;line-height:normal;left:29px;font-style:normal;font-size:24px;color:black;top:49px;width:252px">
+          Find Someone to Connect With
+        </p>
+<div data-node-id="587:2617" style="position:absolute;display:contents;left:calc(75% + 6.5px);top:157px">
+<div data-name="ChatGPT Image Oct 6, 2026, 03_27_23 PM 1" data-node-id="587:2618" style="position:absolute;height:20px;left:calc(75% + 6.5px);top:157px;width:23px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/dd32b.png" style="position:absolute;inset:0;max-width:none;object-fit:cover;opacity:.9;pointer-events:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2619" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;height:15px;line-height:normal;left:calc(75% + 46.5px);font-style:normal;font-size:13px;color:black;text-align:center;top:159px;letter-spacing:0.39px;width:46px">
+            Filter
+          </p>
+</div>
+<p data-node-id="587:2620" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:15px;line-height:normal;left:88.5px;font-size:13px;color:black;text-align:center;top:159px;letter-spacing:0.39px;width:125px">
+          Suggest for you
+        </p>
+<button data-name="Attended People / Mia" data-node-id="587:2621" style="position:absolute;display:block;cursor:pointer;left:32px;width:150px;height:150px;top:193px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3324a.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+<div data-name="Avatar white circle" data-node-id="I587:2621;2429:1527" style="position:absolute;left:8px;width:54px;height:54px;top:10px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/4ebd1.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="I587:2621;2413:2581" style="position:absolute;inset:36.67% 63.33% 58.67% 32%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/921b3.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Frame" data-node-id="I587:2621;2424:1574" style="position:absolute;left:114px;width:24px;height:24px;top:117px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8f878.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2621;2424:1576" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;height:14px;line-height:normal;left:70px;font-style:normal;font-size:10px;color:black;text-align:left;top:40px;width:49px">
+            3 shared
+          </p>
+<p data-node-id="I587:2621;2424:1577" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:70px;font-style:normal;font-size:16px;color:black;text-align:left;top:18px;white-space:nowrap">
+            Mia
+          </p>
+<div data-node-id="I587:2621;2424:1578" style="position:absolute;border-style:solid;border-top-width:1px;border-color:white;height:61px;left:10px;overflow:hidden;top:69px;width:130px">
+<div data-node-id="I587:2621;2424:1579" style="position:absolute;background:#fbe07f;align-content:stretch;display:flex;gap:6.5px;height:23px;align-items:center;left:0;padding-inline:6.5px;padding-block:0.813px;border-radius:24.375px;top:8px">
+<div data-name="Frame" data-node-id="I587:2621;2424:1580" style="position:relative;flex-shrink:0;width:13px;height:13px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/11a56.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2621;2424:1582" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:17.875px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">R&amp;B</p>
+</div>
+<div data-node-id="I587:2621;2424:1583" style="position:absolute;background:rgba(158,175,107,0.8);align-content:stretch;display:flex;gap:8px;height:21px;align-items:flex-end;left:0;padding-inline:8px;padding-block:3px;border-radius:30px;top:39px;width:72px">
+<div data-name="Frame" data-node-id="I587:2621;2424:1584" style="position:relative;flex-shrink:0;width:16px;height:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/5656c.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2621;2424:1586" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;height:16px;line-height:19px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;width:40px">
+                Painting
+              </p>
+</div>
+<div data-node-id="I587:2621;2424:1587" style="position:absolute;background:#f7bbdd;align-content:stretch;display:flex;gap:8px;height:22px;align-items:center;left:60px;padding-inline:8px;padding-block:4px;border-radius:30px;top:9px;width:70px">
+<div data-name="Vector" data-node-id="I587:2621;2424:1588" style="height:12px;position:relative;flex-shrink:0;width:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/a0259.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2621;2424:1589" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">
+                Game
+              </p>
+</div>
+</div>
+<div data-name="User photo" data-node-id="I587:2621;2424:1590" style="position:absolute;left:8px;overflow:hidden;border-radius:128.571px;width:54px;height:54px;top:10px">
+<div data-name="ChatGPT 图像 2026年9月28日 18_00_10-6 1" data-node-id="I587:2621;2424:1590;1900:1864" style="position:absolute;height:27.677px;left:11px;border-radius:7.304px;top:13px;width:32.29px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.304px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8c616.png" style="position:absolute;height:118.18%;left:0;max-width:none;top:-6.82%;width:100%"/>
+</div>
+</div>
+</div>
+</button>
+<button data-name="Attended People / John" data-node-id="587:2622" style="position:absolute;display:block;cursor:pointer;left:calc(50% + 12px);width:150px;height:150px;top:193px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3901a.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+<div data-name="Avatar white circle" data-node-id="I587:2622;2429:1529" style="position:absolute;left:8px;width:54px;height:54px;top:10px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/4ebd1.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="I587:2622;2413:2594" style="position:absolute;inset:36.67% 63.33% 58.67% 32%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/921b3.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2622;2424:1610" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;height:14px;line-height:normal;left:72px;font-style:normal;font-size:10px;color:black;text-align:left;top:40px;width:49px">
+            2 shared
+          </p>
+<div data-name="Frame" data-node-id="I587:2622;2424:1611" style="position:absolute;left:114px;width:24px;height:24px;top:117px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8f878.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="I587:2622;2424:1613" style="position:absolute;border-style:solid;border-top-width:1px;border-color:white;height:61px;left:10px;overflow:hidden;top:69px;width:130px">
+<div data-node-id="I587:2622;2424:1614" style="position:absolute;background:rgba(158,175,107,0.8);align-content:stretch;display:flex;gap:8px;height:22px;align-items:flex-end;left:0;padding-inline:8px;padding-block:3px;border-radius:30px;top:36px;width:94px">
+<div data-name="Frame" data-node-id="I587:2622;2424:1615" style="position:relative;flex-shrink:0;width:16px;height:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/a20e5.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2622;2424:1617" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;height:18px;line-height:19px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;width:55px">
+                Photography
+              </p>
+</div>
+<div data-node-id="I587:2622;2424:1618" style="position:absolute;background:#f7bbdd;align-content:stretch;display:flex;gap:8px;height:22px;align-items:center;left:0;padding-inline:8px;padding-block:4px;border-radius:30px;top:8px;width:70px">
+<div data-name="Vector" data-node-id="I587:2622;2424:1619" style="height:12px;position:relative;flex-shrink:0;width:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/a0259.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2622;2424:1620" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">
+                Game
+              </p>
+</div>
+</div>
+<div data-name="软萌云朵角色贴纸图鉴 8" data-node-id="I587:2622;2424:1621" style="position:absolute;left:19px;border-radius:7.3px;width:31px;height:31px;top:21px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-321.45%;max-width:none;top:-194.31%;width:536.88%"/>
+</div>
+</div>
+<p data-node-id="I587:2622;2424:1622" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;height:18px;line-height:normal;left:72px;font-style:normal;font-size:16px;color:black;text-align:left;top:18px;width:49px">
+            John
+          </p>
+</button>
+<button data-node-id="267:340" style="position:absolute;display:block;cursor:pointer;left:32px;width:150px;height:150px;top:363px">
+<div data-node-id="267:341" style="position:absolute;background:#9eaf6b;inset:0;border-radius:30px"></div>
+<div data-name="Avatar white circle" data-node-id="267:342" style="position:absolute;left:9px;width:54px;height:54px;top:8px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/4ebd1.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="267:344" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;height:14px;line-height:normal;left:73px;font-style:normal;font-size:10px;color:black;text-align:left;top:45px;width:49px">
+        6 shared
+      </p>
+<p data-node-id="267:345" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:73px;font-style:normal;font-size:16px;color:black;text-align:left;top:20px;width:52px">
+        Alice
+      </p>
+<div data-node-id="267:346" style="position:absolute;border-color:#fbf7ed;border-style:solid;border-top-width:1px;height:61px;left:10px;overflow:hidden;top:75px;width:130px">
+<div data-node-id="267:347" style="position:absolute;background:#b9ccec;align-content:stretch;display:flex;gap:6.5px;height:22px;align-items:center;left:0;padding-inline:6.5px;padding-block:0.813px;border-radius:24.375px;top:38px">
+<div data-name="Frame" data-node-id="267:348" style="position:relative;flex-shrink:0;width:16px;height:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/5829f.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="267:350" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:17.875px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">
+            Basket Ball
+          </p>
+</div>
+<div data-node-id="267:351" style="position:absolute;background:#f8dc71;align-content:stretch;display:flex;gap:8px;height:21px;align-items:flex-end;left:0;padding-inline:8px;padding-block:3px;border-radius:30px;top:9px;width:72px">
+<div data-name="Frame" data-node-id="267:352" style="position:relative;flex-shrink:0;width:16px;height:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/5656c.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="267:354" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;height:16px;line-height:19px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;width:40px">
+            Painting
+          </p>
+</div>
+<div data-node-id="267:355" style="position:absolute;background:#f7bbdd;align-content:stretch;display:flex;gap:8px;align-items:center;left:75px;padding-inline:8px;padding-block:4px;border-radius:30px;top:9px">
+<div data-name="Frame" data-node-id="267:356" style="position:relative;flex-shrink:0;width:13px;height:13px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/11a56.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="267:358" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">
+            Jazz
+          </p>
+</div>
+</div>
+<div data-name="Frame" data-node-id="267:359" style="position:absolute;left:115px;width:24px;height:24px;top:119px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8f878.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="软萌云朵角色贴纸图鉴 2" data-node-id="267:361" style="position:absolute;height:34px;left:19px;border-radius:7.3px;top:18px;width:33px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:325.24%;left:-0.01%;max-width:none;top:-54.8%;width:504.34%"/>
+</div>
+</div>
+</button>
+<button data-name="Attended People / Leanne" data-node-id="587:2624" style="position:absolute;display:block;cursor:pointer;left:calc(50% + 12px);width:150px;height:150px;top:363px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/0ffe7.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+<div data-name="Avatar white circle" data-node-id="I587:2624;2429:1533" style="position:absolute;left:8px;width:54px;height:54px;top:10px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/4ebd1.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="I587:2624;2413:2618" style="position:absolute;inset:36.67% 63.33% 58.67% 32%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/921b3.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2624;2424:1672" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;height:14px;line-height:normal;left:72px;font-style:normal;font-size:10px;color:black;text-align:left;top:42px;width:49px">
+            5 shared
+          </p>
+<p data-node-id="I587:2624;2424:1673" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:71px;font-style:normal;font-size:16px;color:black;text-align:left;top:20px;white-space:nowrap">
+            Leanne
+          </p>
+<div data-node-id="I587:2624;2424:1674" style="position:absolute;border-style:solid;border-top-width:1px;border-color:white;height:61px;left:10px;overflow:hidden;top:76px;width:130px">
+<div data-node-id="I587:2624;2424:1675" style="position:absolute;background:#b9ccec;align-content:stretch;display:flex;gap:6.5px;height:23px;align-items:center;left:0;padding-inline:6.5px;padding-block:0.813px;border-radius:24.375px;top:8px">
+<div data-name="Frame" data-node-id="I587:2624;2424:1676" style="position:relative;flex-shrink:0;width:13px;height:13px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/11a56.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2624;2424:1678" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:17.875px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">R&amp;B</p>
+</div>
+<div data-node-id="I587:2624;2424:1679" style="position:absolute;background:rgba(158,175,107,0.8);align-content:stretch;display:flex;gap:8px;height:21px;align-items:flex-end;left:0;padding-inline:8px;padding-block:3px;border-radius:30px;top:219px;width:72px">
+<div data-name="Frame" data-node-id="I587:2624;2424:1680" style="position:relative;flex-shrink:0;width:16px;height:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/5656c.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2624;2424:1682" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;height:16px;line-height:19px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;width:40px">
+                Painting
+              </p>
+</div>
+<div data-node-id="I587:2624;2424:1683" style="position:absolute;background:#f8dc71;align-content:stretch;display:flex;gap:8px;height:22px;align-items:center;left:60px;padding-inline:8px;padding-block:4px;border-radius:30px;top:9px;width:70px">
+<div data-name="Vector" data-node-id="I587:2624;2424:1684" style="height:12px;position:relative;flex-shrink:0;width:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/a0259.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2624;2424:1685" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:normal;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">
+                Game
+              </p>
+</div>
+<div data-name="Frame" data-node-id="I587:2624;2424:1686" style="position:absolute;left:104px;width:24px;height:24px;top:41px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8f878.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="I587:2624;2424:1688" style="position:absolute;background:#9eaf6b;align-content:stretch;display:flex;gap:8px;align-items:flex-start;left:0;padding-inline:8px;padding-block:2px;border-radius:30px;top:38px">
+<div data-name="Frame" data-node-id="I587:2624;2424:1689" style="position:relative;flex-shrink:0;width:16px;height:16px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/f13df.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="I587:2624;2424:1691" style="overflow-wrap:break-word;font-family:'Inter',sans-serif;font-weight:500;line-height:17.875px;font-style:normal;position:relative;flex-shrink:0;font-size:8px;color:black;text-align:left;white-space:nowrap">
+                Soccor
+              </p>
+</div>
+</div>
+<div data-name="软萌云朵角色贴纸图鉴 7" data-node-id="I587:2624;2424:1692" style="position:absolute;left:19px;border-radius:7.3px;width:31px;height:31px;top:21px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-430.39%;max-width:none;top:-190.52%;width:536.88%"/>
+</div>
+</div>
+</button>
+</div></div><div class="film-scene" data-scene="1" hidden=""><div class="film-profile"><img alt="Mia profile with shared interests" src="assets/wego/shared-interests.png"/><button aria-label="Back to shared interests" class="profile-back"></button><button aria-label="Connect with Mia" class="profile-connect"></button></div></div><div class="film-scene" data-scene="2" hidden=""><div data-name="SEND INTRO" data-node-id="587:2625" style="position:relative;background:#fbf7ed;height:844px;overflow:hidden;border-radius:50px;width:390px">
+<p data-node-id="587:2626" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:600;height:25px;line-height:normal;left:60px;font-size:24px;color:black;top:63px;width:209px">
+          Introduce yourself
+        </p>
+<p data-node-id="587:2627" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:17px;line-height:normal;left:34px;font-size:16px;color:black;top:122px;width:151px">
+          Suggested prompts
+        </p>
+<div data-node-id="267:1292" style="position:absolute;height:46px;left:33px;top:755px;width:319px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ca47d.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+<p data-node-id="267:1294" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;inset:28.26% 28.21% 23.91% 28.21%;line-height:normal;font-size:16px;color:white">
+        Swipe and Let’s go
+      </p>
+<div data-node-id="267:1295" style="position:absolute;inset:10.87% 86.83% 10.87% 1.88%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/269ae.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="267:1296" style="position:absolute;display:flex;inset:34.78% 89.97% 36.96% 7.52%;align-items:center;justify-content:center">
+<div style="flex:none;height:100cqw;transform:rotate(90deg);width:100cqh">
+<div style="position:relative;width:100%;height:100%">
+<div style="position:absolute;inset:-6.25% -3.85%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/24173.svg" style="display:block;max-width:none;width:100%;height:100%"/>
+</div>
+</div>
+</div>
+</div>
+<div data-node-id="267:1297" style="position:absolute;display:flex;inset:34.78% 92.48% 36.96% 5.02%;align-items:center;justify-content:center">
+<div style="flex:none;height:100cqw;transform:rotate(90deg);width:100cqh">
+<div style="position:relative;width:100%;height:100%">
+<div style="position:absolute;inset:-6.25% -3.85%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/24173.svg" style="display:block;max-width:none;width:100%;height:100%"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-node-id="587:2629" style="position:absolute;display:flex;height:17px;align-items:center;justify-content:center;left:33px;top:69px;width:9px">
+<div style="transform:scaleY(-1);flex:none;transform:rotate(90deg)">
+<div style="height:9px;position:relative;width:17px">
+<div style="position:absolute;inset:-11.11% -5.88%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/666d5.svg" style="display:block;max-width:none;width:100%;height:100%"/>
+</div>
+</div>
+</div>
+</div>
+<div data-node-id="267:1306" style="position:absolute;height:511px;left:35px;top:175px;width:320px">
+<div data-name="Response Box" data-node-id="267:1307" style="position:absolute;background:rgba(251,247,237,0.25);border-width:1px;border-color:rgba(115,115,115,0.75);border-style:solid;height:278px;left:0;overflow:hidden;border-radius:10px;top:233px;width:320px">
+<p data-node-id="267:1308" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:220px;line-height:normal;left:19px;color:#141414;font-size:16px;top:19px;width:280px">
+          ​
+        </p>
+</div>
+<button data-name="Prompt/Going alone" data-node-id="267:1309" style="position:absolute;background:#a2b078;display:block;cursor:pointer;height:50px;left:0;overflow:hidden;border-radius:25px;box-shadow:0px 3px 3px 0px rgba(0,0,0,0.12);top:0;width:150px">
+<p data-node-id="267:1310" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:22px;line-height:normal;left:75px;font-size:16px;color:black;text-align:center;top:14px;width:150px">
+          Going alone
+        </p>
+</button>
+<button data-name="Prompt/Same faculty" data-node-id="267:1311" style="position:absolute;background:#f7bbdd;display:block;cursor:pointer;height:50px;left:164px;overflow:hidden;border-radius:25px;box-shadow:0px 3px 3px 0px rgba(0,0,0,0.12);top:0;width:150px">
+<p data-node-id="267:1312" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:22px;line-height:normal;left:75px;font-size:16px;color:black;text-align:center;top:14px;width:150px">
+          Same faculty
+        </p>
+</button>
+<button data-name="Prompt/New to Melbourne" data-node-id="267:1313" style="position:absolute;background:#bdcfec;display:block;cursor:pointer;height:50px;left:0;overflow:hidden;border-radius:25px;box-shadow:0px 3px 3px 0px rgba(0,0,0,0.12);top:72px;width:189px">
+<p data-node-id="267:1314" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:22px;line-height:normal;left:94.5px;font-size:16px;color:black;text-align:center;top:14px;width:189px">
+          New to melbourne
+        </p>
+</button>
+<button data-name="Prompt/Same interests" data-node-id="267:1315" style="position:absolute;background:#f7bbdd;display:block;cursor:pointer;height:50px;left:1px;overflow:hidden;border-radius:25px;box-shadow:0px 3px 3px 0px rgba(0,0,0,0.12);top:144px;width:163px">
+<p data-node-id="267:1316" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:22px;line-height:normal;left:81.5px;font-size:16px;color:black;text-align:center;top:14px;width:163px">
+          Same interests
+        </p>
+</button>
+<button data-name="Prompt/Live nearby" data-node-id="267:1317" style="position:absolute;background:#f8dc71;display:block;cursor:pointer;height:50px;left:170px;overflow:hidden;border-radius:25px;box-shadow:0px 3px 3px 0px rgba(0,0,0,0.12);top:144px;width:150px">
+<p data-node-id="267:1318" style="transform:translateX(-50%);overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;height:22px;line-height:normal;left:75px;font-size:16px;color:black;text-align:center;top:14px;width:150px">
+          Live nearby
+        </p>
+</button>
+</div>
+<div data-name="Frame" data-node-id="587:2631" style="position:absolute;left:325px;width:24px;height:24px;top:39px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/9acd5.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+</div></div><div class="film-scene" data-scene="3" hidden=""><div data-name="聊天列表" data-node-id="587:2633" style="position:relative;background:#fbf7eb;height:844px;overflow:hidden;border-radius:50px;width:390px">
+<div data-node-id="587:2634" style="position:absolute;background:rgba(235,235,235,0.2);border-color:rgba(138,138,138,0.2);border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:743px;width:390px">
+<div data-node-id="587:2635" style="position:absolute;background:white;align-content:stretch;display:flex;align-items:flex-start;left:22px;padding:6px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="软萌云朵角色贴纸图鉴 7" data-node-id="587:2636" style="height:35px;position:relative;border-radius:7.535px;flex-shrink:0;width:33px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.535px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:332.29%;left:-415.25%;max-width:none;top:-49.31%;width:530.44%"/>
+</div>
+</div>
+</div>
+<div data-node-id="587:2637" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:500;line-height:0;left:96px;font-style:normal;font-size:16px;color:black;top:14px;white-space:nowrap">
+<p style="line-height:normal;margin-bottom:0">Rachel</p>
+<p style="line-height:normal">​</p>
+</div>
+<p data-node-id="587:2638" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+</div>
+<div data-node-id="587:2639" style="position:absolute;background:rgba(235,235,235,0.2);border-color:rgba(138,138,138,0.2);border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:815px;width:390px">
+<div data-node-id="587:2640" style="position:absolute;background:white;align-content:stretch;display:flex;align-items:flex-start;left:22px;padding:6px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="Frame" data-node-id="587:2641" style="overflow:hidden;position:relative;flex-shrink:0;width:45px;height:45px">
+<div data-name="软萌云朵角色贴纸图鉴 3" data-node-id="587:2642" style="position:absolute;aspect-ratio:33/31;left:13.33%;right:11.11%;border-radius:7.3px;top:7px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-102.72%;max-width:none;top:-69.78%;width:504.34%"/>
+</div>
+</div>
+</div>
+</div>
+<div data-node-id="587:2643" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:500;line-height:0;left:96px;font-style:normal;font-size:16px;color:black;top:14px;white-space:nowrap">
+<p style="line-height:normal;margin-bottom:0">Mike</p>
+<p style="line-height:normal">​</p>
+</div>
+<p data-node-id="587:2644" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+</div>
+<div data-node-id="587:2645" style="position:absolute;background:rgba(235,235,235,0.2);border-color:rgba(192,169,82,0.4);border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:105px;width:390px">
+<div data-node-id="587:2646" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="ChatGPT 图像 2026年9月28日 18_00_10-6 1" data-node-id="587:2647" style="position:absolute;height:27.677px;left:13px;border-radius:7.304px;top:15px;width:32.29px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.304px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8c616.png" style="position:absolute;height:118.18%;left:0;max-width:none;top:-6.82%;width:100%"/>
+</div>
+</div>
+</div>
+<p data-node-id="587:2648" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Mia Li
+          </p>
+<p data-node-id="587:2649" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [photo]
+          </p>
+</div>
+<div data-node-id="587:2650" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:-1px;overflow:hidden;top:176px;width:390px">
+<div data-node-id="587:2651" style="position:absolute;background:white;border-width:1px;border-color:black;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;left:22px;padding:6px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="Frame" data-node-id="587:2652" style="position:relative;flex-shrink:0;width:45px;height:45px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/2d5e8.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+</div>
+<p data-node-id="587:2655" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Lewis Cai
+          </p>
+<p data-node-id="587:2656" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Emoji]
+          </p>
+<div data-node-id="587:2657" style="position:absolute;left:22px;width:57px;height:57px;top:7px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/487d5.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="image 267" data-node-id="587:2658" style="position:absolute;height:29px;left:34px;border-radius:7px;top:21px;width:33px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ab483.png" style="position:absolute;inset:0;max-width:none;object-fit:cover;pointer-events:none;border-radius:7px;width:100%;height:100%"/>
+</div>
+</div>
+<div data-node-id="587:2659" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:247px;width:390px">
+<div data-node-id="587:2660" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="软萌云朵角色贴纸图鉴 8" data-node-id="587:2661" style="position:absolute;left:13px;border-radius:7.3px;width:31px;height:31px;top:13px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-321.45%;max-width:none;top:-194.31%;width:536.88%"/>
+</div>
+</div>
+</div>
+<p data-node-id="587:2662" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            John
+          </p>
+<p data-node-id="587:2663" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+</div>
+<div data-node-id="587:2664" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:389px;width:390px">
+<div data-node-id="587:2665" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="软萌云朵角色贴纸图鉴 7" data-node-id="587:2666" style="position:absolute;left:13px;border-radius:7.3px;width:31px;height:31px;top:13px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-430.39%;max-width:none;top:-190.52%;width:536.88%"/>
+</div>
+</div>
+</div>
+<p data-node-id="587:2667" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Leanne
+          </p>
+<p data-node-id="587:2668" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [[Hi! I’d love to connect with you!]]
+          </p>
+</div>
+<div data-node-id="587:2669" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:459px;width:390px">
+<div data-node-id="587:2670" style="position:absolute;background:white;border-width:1px;border-color:black;border-style:solid;align-content:stretch;display:flex;align-items:flex-start;left:22px;padding:6px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="Frame" data-node-id="587:2671" style="position:relative;flex-shrink:0;width:45px;height:45px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/2d5e8.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+</div>
+<p data-node-id="587:2674" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Melbourne Night Market
+          </p>
+<p data-node-id="587:2675" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Yessss. See you there.]
+          </p>
+<div data-name="image 258" data-node-id="587:2676" style="position:absolute;left:22px;border-radius:50px;width:57px;height:57px;top:7px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:50px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/8620c.png" style="position:absolute;height:141.37%;left:-19.02%;max-width:none;top:-4.57%;width:133.42%"/>
+</div>
+</div>
+</div>
+<div data-node-id="587:2677" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:531px;width:390px">
+<div data-node-id="587:2678" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="软萌云朵角色贴纸图鉴 5" data-node-id="587:2679" style="position:absolute;left:13px;border-radius:7.535px;width:32px;height:32px;top:13px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.535px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-324.26%;max-width:none;top:-68.05%;width:536.88%"/>
+</div>
+</div>
+</div>
+<p data-node-id="587:2680" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Helena
+          </p>
+<p data-node-id="587:2681" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+</div>
+<div data-node-id="587:2682" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:602px;width:390px">
+<div data-node-id="587:2683" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px"></div>
+<p data-node-id="587:2684" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Duy Dang
+          </p>
+<p data-node-id="587:2685" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+<div data-name="软萌云朵角色贴纸图鉴 4" data-node-id="587:2686" style="position:absolute;left:35px;border-radius:7.771px;width:32px;height:32px;top:20px">
+<div aria-hidden="" style="position:absolute;inset:0;pointer-events:none;border-radius:7.771px">
+<div style="position:absolute;inset:0;overflow:hidden;border-radius:7.771px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-214.58%;max-width:none;top:-68.05%;width:536.88%"/>
+</div>
+<div style="position:absolute;inset:0;overflow:hidden;border-radius:7.771px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-214.58%;max-width:none;top:-68.05%;width:536.88%"/>
+</div>
+<div style="position:absolute;inset:0;overflow:hidden;border-radius:7.771px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-214.58%;max-width:none;top:-68.05%;width:536.88%"/>
+</div>
+</div>
+</div>
+</div>
+<div data-node-id="587:2687" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:673px;width:390px">
+<div data-node-id="587:2688" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="软萌云朵角色贴纸图鉴 8" data-node-id="587:2689" style="position:absolute;left:12px;border-radius:7.771px;width:33px;height:33px;top:12px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.771px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:356.71%;left:-321.45%;max-width:none;top:-194.31%;width:536.88%"/>
+</div>
+</div>
+</div>
+<p data-node-id="587:2690" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Bobby MA
+          </p>
+<p data-node-id="587:2691" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+</div>
+<div data-node-id="587:2692" style="position:absolute;background:rgba(235,235,235,0.2);border-color:#e2d7ae;border-bottom-width:1px;border-style:solid;height:71px;left:0;overflow:hidden;top:318px;width:390px">
+<div data-node-id="587:2693" style="position:absolute;background:white;left:22px;border-radius:28.5px;width:57px;height:57px;top:7px">
+<div data-name="软萌云朵角色贴纸图鉴 2" data-node-id="587:2694" style="position:absolute;height:34px;left:12px;border-radius:7.3px;top:12px;width:33px">
+<div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;border-radius:7.3px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/3b5fa.png" style="position:absolute;height:325.24%;left:-0.01%;max-width:none;top:-54.8%;width:504.34%"/>
+</div>
+</div>
+</div>
+<p data-node-id="587:2695" style="overflow-wrap:break-word;position:absolute;font-family:'Instrument Sans',sans-serif;font-weight:500;line-height:normal;left:96px;font-size:16px;color:black;top:14px;white-space:nowrap">
+            Alice
+          </p>
+<p data-node-id="587:2696" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;line-height:normal;left:96px;font-style:normal;font-size:12px;color:rgba(112,112,112,0.5);top:42px;white-space:nowrap">
+            [Hi! I’d love to connect with you!]
+          </p>
+</div>
+<div data-node-id="587:2697" style="position:absolute;background:#f8dc71;height:119px;left:0;top:-14px;width:390px"></div>
+<div data-node-id="587:2698" style="position:absolute;background:white;height:28px;left:52px;overflow:hidden;border-radius:10px;top:68px;width:281px">
+<div data-name="Frame" data-node-id="587:2699" style="position:absolute;left:250px;width:24px;height:24px;top:2px">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/eb8f8.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+</div>
+<div data-name="home bar" data-node-id="587:2701" style="position:absolute;bottom:-0.31px;height:92.31px;left:0;width:391px">
+<div data-node-id="587:2702" style="position:absolute;inset:0 0.26% 0 0">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ff5d0.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="587:2703" style="position:absolute;display:contents;inset:34.67% 79.28% 16.59% 12.53%">
+<div data-name="Vector" data-node-id="587:2704" style="position:absolute;inset:34.67% 79.96% 36.76% 13.3%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/7da51.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2705" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;inset:70.42% 79.28% 16.59% 12.53%;line-height:normal;font-style:normal;font-size:10px;text-align:center;color:white;letter-spacing:0.3px">
+              Home
+            </p>
+</div>
+<div data-node-id="587:2706" style="position:absolute;display:contents;inset:36.83% 45.78% 16.59% 45.27%">
+<div data-name="Frame" data-node-id="587:2707" style="position:absolute;inset:36.83% 47.06% 35% 46.29%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/78120.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2710" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:70.42% 45.78% 16.59% 45.27%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+              People
+            </p>
+</div>
+<div data-node-id="587:2711" style="position:absolute;display:contents;inset:35.75% 10.49% 18.75% 76.21%">
+<div data-name="Vector" data-node-id="587:2712" style="position:absolute;inset:41.85% 13.1% 41.54% 82.9%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/6cc61.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Vector" data-node-id="587:2713" style="position:absolute;inset:35.75% 15.33% 46.27% 80.31%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/c6389.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2714" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:68.25% 10.49% 18.75% 76.21%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+              Messages
+            </p>
+</div>
+<div data-node-id="587:2715" style="position:absolute;display:contents;inset:0 0 0 0.26%">
+<div data-node-id="587:2716" style="position:absolute;inset:0 0 0 0.26%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ff5d0.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="587:2717" style="position:absolute;display:contents;inset:34.67% 79.03% 16.59% 12.79%">
+<div data-name="Vector" data-node-id="587:2718" style="position:absolute;inset:34.67% 79.7% 36.76% 13.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/7da51.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2719" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;inset:70.42% 79.03% 16.59% 12.79%;line-height:normal;font-style:normal;font-size:10px;text-align:center;color:white;letter-spacing:0.3px">
+                Home
+              </p>
+</div>
+<div data-node-id="587:2720" style="position:absolute;display:contents;inset:36.83% 45.52% 16.59% 45.52%">
+<div data-name="Frame" data-node-id="587:2721" style="position:absolute;inset:36.83% 46.8% 35% 46.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/78120.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2724" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:70.42% 45.52% 16.59% 45.52%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                People
+              </p>
+</div>
+<div data-node-id="587:2725" style="position:absolute;display:contents;inset:35.75% 10.23% 18.75% 76.47%">
+<div data-name="Vector" data-node-id="587:2726" style="position:absolute;inset:41.85% 12.84% 41.54% 83.15%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/6cc61.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Vector" data-node-id="587:2727" style="position:absolute;inset:35.75% 15.08% 46.27% 80.56%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/c6389.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2728" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:68.25% 10.23% 18.75% 76.47%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                Messages
+              </p>
+</div>
+<div data-node-id="587:2729" style="position:absolute;display:contents;inset:0 0 0 0.26%">
+<div data-node-id="587:2730" style="position:absolute;inset:0 0 0 0.26%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/ff5d0.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-node-id="587:2731" style="position:absolute;display:contents;inset:34.67% 79.03% 16.59% 12.79%">
+<div data-name="Vector" data-node-id="587:2732" style="position:absolute;inset:34.67% 79.7% 36.76% 13.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/84fca.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2733" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:600;inset:70.42% 79.03% 16.59% 12.79%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                  Home
+                </p>
+</div>
+<div data-node-id="587:2734" style="position:absolute;display:contents;inset:36.83% 41.43% 16.59% 41.43%">
+<div data-name="Frame" data-node-id="587:2735" style="position:absolute;inset:36.83% 46.8% 35% 46.55%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/78120.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2738" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:70.42% 41.43% 16.59% 41.43%;line-height:normal;font-style:normal;color:#c4c7b5;font-size:10px;text-align:center;letter-spacing:0.3px">
+                  Find Connect
+                </p>
+</div>
+<div data-node-id="587:2739" style="position:absolute;display:contents;inset:35.75% 10.23% 18.75% 76.47%">
+<div data-name="Vector" data-node-id="587:2740" style="position:absolute;inset:41.85% 12.84% 41.54% 83.15%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/0f8f9.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<div data-name="Vector" data-node-id="587:2741" style="position:absolute;inset:35.75% 15.08% 46.27% 80.56%">
+<img alt="" loading="lazy" src="assets/wego/interest-flow/1c4c6.svg" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%"/>
+</div>
+<p data-node-id="587:2742" style="overflow-wrap:break-word;position:absolute;font-family:'Inter',sans-serif;font-weight:400;inset:68.25% 10.23% 18.75% 76.47%;line-height:normal;font-style:normal;font-size:10px;text-align:center;color:white;letter-spacing:0.3px">
+                  Messages
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div></div><span aria-hidden="true" class="film-touch"></span><div class="film-success" hidden="">Message sent</div></div></div></div><div aria-hidden="true" class="film-progress"><span></span></div><p aria-live="polite" class="film-status"></p></div></div></section><section class="wego-onboarding" id="onboarding"><p class="kicker" data-en="SUPPORTING THE EXPERIENCE" data-zh="体验补充">SUPPORTING THE EXPERIENCE</p><h2 class="" data-en="Student verification &amp; personalisation" data-zh="学生验证与个性化设置">Student verification &amp; personalisation</h2><div class="onboarding-layout"><div class="onboarding-copy"><div aria-label="Onboarding steps" class="onboarding-tabs"><button aria-controls="onboard-panel-0" aria-pressed="true" data-onboard="0" type="button"><span>01</span><span class="" data-en="Student verification" data-zh="学生验证">Student verification</span></button><button aria-controls="onboard-panel-1" aria-pressed="false" data-onboard="1" type="button"><span>02</span><span class="" data-en="Your interests" data-zh="你的兴趣">Your interests</span></button><button aria-controls="onboard-panel-2" aria-pressed="false" data-onboard="2" type="button"><span>03</span><span class="" data-en="Your schedule" data-zh="你的日程">Your schedule</span></button></div><div class="onboarding-note" data-onboard-note="0"><h3 class="" data-en="A community for university students" data-zh="面向大学生的社区">A community for university students</h3><p class="" data-en="University email verification establishes the student context. Explaining its purpose alongside the action helps students understand why they are being asked to verify." data-zh="大学邮箱验证建立学生社区的身份基础。在操作旁解释用途，让学生理解为什么需要这一步。">University email verification establishes the student context. Explaining its purpose alongside the action helps students understand why they are being asked to verify.</p></div><div class="onboarding-note" data-onboard-note="1" hidden=""><h3 class="" data-en="Recommendations start with their interests" data-zh="从个人兴趣出发推荐">Recommendations start with their interests</h3><p class="" data-en="Students choose the topics they enjoy. These preferences can inform activity recommendations and give people a starting point for discovering shared interests." data-zh="学生主动选择喜欢的话题，为活动推荐提供依据，也为发现彼此的共同兴趣建立起点。">Students choose the topics they enjoy. These preferences can inform activity recommendations and give people a starting point for discovering shared interests.</p></div><div class="onboarding-note" data-onboard-note="2" hidden=""><h3 class="" data-en="Make room for their existing plans" data-zh="把已有安排考虑进来">Make room for their existing plans</h3><p class="" data-en="An optional calendar connection brings availability into the discovery process. Students can skip it and continue exploring before deciding to share their schedule." data-zh="可选的日历连接把空闲时间纳入活动发现。学生也可以先跳过、继续体验，再决定是否分享日程。">An optional calendar connection brings availability into the discovery process. Students can skip it and continue exploring before deciding to share their schedule.</p></div><p class="onboarding-hint" data-en="Try the steps in the prototype." data-zh="可在右侧原型中体验各步骤。">Try the steps in the prototype.</p></div><div class="onboarding-preview"><div class="onboarding-device"><div class="onboard-panel" id="onboard-panel-0"><div class="onboard-top"><button aria-label="Previous onboarding step" class="onboard-back" type="button"><img alt="" class="" src="assets/wego/onboarding/423fe.svg"/></button><div class="onboard-progress"><i class="current"></i><i></i><i></i></div></div><h3>Verify your<br/>student status</h3><p class="onboard-sub">Use your university email to join WEGO’s student community.</p><img alt="" class="verify-art" src="assets/wego/onboarding/c49d6.png"/><div class="verify-field"><b>University email address</b><button aria-label="Use sample student email" class="sample-email" type="button"><img alt="" class="" src="assets/wego/onboarding/41325.png"/>name@student.unimelb.edu.au</button><button class="onboard-next verify-next" type="button">Verify Now</button></div><div class="verify-reasons"><h4>Why verify?</h4><div><img alt="" class="" src="assets/wego/onboarding/0f124.png"/><p><b>Confirm you’re a university student</b><br/>Access student-only events and features.</p></div><div><img alt="" class="" src="assets/wego/onboarding/bba12.png"/><p><b>Connect with other verified students</b><br/>Meet and join events with other students.</p></div><div><img alt="" class="" src="assets/wego/onboarding/15b45.png"/><p><b>Unlock more relevant events</b><br/>Get personalised recommendations for your university life.</p></div></div></div><div class="onboard-panel" hidden="" id="onboard-panel-1"><div class="onboard-top"><button aria-label="Previous onboarding step" class="onboard-back" type="button"><img alt="" class="" src="assets/wego/onboarding/423fe.svg"/></button><div class="onboard-progress"><i></i><i class="current"></i><i></i></div><button class="onboard-skip" type="button">skip</button></div><h3>What are you<br/>interested in?</h3><p class="onboard-sub">Select a few topics to get personalised recommendations.</p><div class="interest-options"><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/d6c2f.svg"/>Music</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/aabc9.svg"/>Sports tennis</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/9b969.svg"/>Sport Rugby</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/1a63c.svg"/>Sport golf</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/1908f.svg"/>Gym</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/42f64.svg"/>Skateboarding</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/88296.svg"/>Pickleball</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/ee753.svg"/>Chess</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/5af8b.svg"/>Movie</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/5ea5c.svg"/>Badminton</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/ed993.svg"/>Comedy</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/e66b2.svg"/>Writing</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/05a6d.svg"/>Downhill skiing</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/97309.svg"/>Soccer</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/1aef9.svg"/>Painting</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/b6c54.svg"/>Game</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/88853.svg"/>Swimming</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/219a8.svg"/>Volleyball</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/0f608.svg"/>Baseball</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/6ed86.svg"/>Sledding</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/20c16.svg"/>Kayaking</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/51c1c.svg"/>Football</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/ee612.svg"/>Motorcycle</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/55087.svg"/>Reading</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/d8471.svg"/>Car driving</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/cb05d.svg"/>Travel</button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/5ac46.svg"/>Hiking</button></div><button class="onboard-next bottom-next" type="button">Next</button></div><div class="onboard-panel" hidden="" id="onboard-panel-2"><div class="onboard-top"><button aria-label="Previous onboarding step" class="onboard-back" type="button"><img alt="" class="" src="assets/wego/onboarding/423fe.svg"/></button><div class="onboard-progress"><i></i><i></i><i class="current"></i></div><button class="onboard-skip" type="button">skip</button></div><h3>Connect your<br/>calendar</h3><p class="onboard-sub">Find events that fit your schedule.</p><div class="calendar-options"><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/aebd1.png"/><span><b>Apple calendar</b><small>Connect your Apple calendar</small></span><img alt="" class="calendar-chevron" src="assets/wego/onboarding/b97a7.svg"/></button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/1048c.png"/><span><b>Google calendar</b><small>Connect your Google calendar</small></span><img alt="" class="calendar-chevron" src="assets/wego/onboarding/b97a7.svg"/></button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/caff6.png"/><span><b>Outlook calendar</b><small>Connect your Outlook calendar</small></span><img alt="" class="calendar-chevron" src="assets/wego/onboarding/b97a7.svg"/></button><button aria-pressed="false" type="button"><img alt="" class="" src="assets/wego/onboarding/b55b4.png"/><span><b>Upload a calendar file</b><small>Choose a calendar file</small></span><img alt="" class="calendar-chevron" src="assets/wego/onboarding/b97a7.svg"/></button></div><button class="onboard-next bottom-next" type="button">Next</button></div></div><p class="prototype-caption" data-en="Interactive prototype · no account or calendar connection required" data-zh="交互原型 · 无需真实账户或日历连接">Interactive prototype · no account or calendar connection required</p><p class="onboarding-status" role="status"></p></div></div></section><section class="wego-testing" id="testing"><p class="kicker" data-en="05 / USER TESTING" data-zh="05 / 用户测试">05 / USER TESTING</p><h2 class="" data-en="Testing &amp; refinement" data-zh="测试与改进">Testing &amp; refinement</h2><p class="testing-intro" data-en="10 participants · 5 task scenarios · 2 revisions shown" data-zh="10 位参与者 · 5 个任务场景 · 展示 2 项改进">10 participants · 5 task scenarios · 2 revisions shown</p><div class="testing-findings"><article class="testing-finding"><div class="finding-heading"><span>01</span><h3 class="" data-en="A clearer profile entry" data-zh="个人资料入口没有说明用途">A clearer profile entry</h3></div><div class="finding-columns"><div><p class="finding-label" data-en="OBSERVED" data-zh="测试发现">OBSERVED</p><p class="" data-en="The profile entry was overlooked; its arrow could be mistaken for an interest icon." data-zh="资料入口容易被忽略，箭头可能被误认为兴趣图标。">The profile entry was overlooked; its arrow could be mistaken for an interest icon.</p></div><div><p class="finding-label" data-en="DESIGN REVISION" data-zh="设计调整">DESIGN REVISION</p><p class="" data-en="Named interest tags and a separate expand icon distinguish information from action." data-zh="用文字兴趣标签与独立的展开图标，区分信息和操作。">Named interest tags and a separate expand icon distinguish information from action.</p></div></div><div class="testing-comparison profile-comparison"><figure><figcaption data-en="Before" data-zh="修改前">Before</figcaption><div class="revision-art"><img alt="Original profile design" class="revision-profile-before" src="assets/wego/testing-profile-before.png"/></div></figure><figure><figcaption data-en="After" data-zh="修改后">After</figcaption><div class="revision-art"><img alt="Revised profile design" class="revision-profile-after" src="assets/wego/testing-profile-after.png"/></div></figure></div></article><article class="testing-finding"><div class="finding-heading"><span>02</span><h3 class="" data-en="Connect → Find Buddy" data-zh="Connect 没有说清下一步">Connect → Find Buddy</h3></div><div class="finding-columns"><div><p class="finding-label" data-en="OBSERVED" data-zh="测试发现">OBSERVED</p><p class="" data-en="The Connect label did not make its destination clear." data-zh="Connect 标签没有明确说明会打开什么。">The Connect label did not make its destination clear.</p></div><div><p class="finding-label" data-en="DESIGN REVISION" data-zh="设计调整">DESIGN REVISION</p><p class="" data-en="“Find Buddy” names the destination while retaining the icon and position." data-zh="改为“Find Buddy”，明确用途并保留原有图标与位置。">“Find Buddy” names the destination while retaining the icon and position.</p></div></div><div class="testing-comparison nav-comparison"><figure><figcaption data-en="Before" data-zh="修改前">Before</figcaption><div class="revision-art"><img alt="Original nav design" class="revision-nav-before" src="assets/wego/testing-nav-before.png"/></div></figure><figure><figcaption data-en="After" data-zh="修改后">After</figcaption><div class="revision-art"><img alt="Revised nav design" class="revision-nav-after" src="assets/wego/testing-nav-after.png"/></div></figure></div></article></div></section><section class="wego-reflection" id="reflection"><p class="kicker" data-en="06 / REFLECTION" data-zh="06 / 设计反思">06 / REFLECTION</p><h2 class="" data-en="What I’m taking forward" data-zh="这次设计留下的思考">What I’m taking forward</h2><div class="reflection-grid"><article><p class="reflection-label" data-en="WHAT I LEARNED" data-zh="设计收获">WHAT I LEARNED</p><h3 class="" data-en="Make the next action easy to recognise" data-zh="让下一步操作更容易被理解">Make the next action easy to recognise</h3><p class="" data-en="The profile arrow and Connect label showed how small interface choices can interrupt a social flow. Clear entry points matter alongside the matching idea itself." data-zh="资料页箭头和 Connect 标签的问题提醒我：细小的界面选择也会打断社交流程。除了匹配方式，清晰的操作入口同样重要。">The profile arrow and Connect label showed how small interface choices can interrupt a social flow. Clear entry points matter alongside the matching idea itself.</p></article><article><p class="reflection-label" data-en="WHAT I WOULD TEST NEXT" data-zh="下一步验证">WHAT I WOULD TEST NEXT</p><h3 class="" data-en="Follow the connection beyond the screen" data-zh="把验证延伸到真实参与">Follow the connection beyond the screen</h3><p class="" data-en="A prototype can reveal navigation issues, but it cannot show whether students will meet and attend an event together. Next, I would test a more functional flow with a broader range of students, tracking task completion and time alongside their feedback." data-zh="原型可以暴露导航问题，但还不能说明学生是否会真正见面、一起参加活动。下一步，我会邀请背景更多样的学生体验更完整的流程，结合任务完成情况、耗时与反馈进行验证。">A prototype can reveal navigation issues, but it cannot show whether students will meet and attend an event together. Next, I would test a more functional flow with a broader range of students, tracking task completion and time alongside their feedback.</p></article></div><div class="reflection-end"><a href="index.html#work" class="back-to-work" data-en="Back to selected works" data-zh="返回作品列表">Back to selected works</a><a href="#" class="back-to-top" data-en="Back to top" data-zh="返回顶部">Back to top</a></div></section></main><script src="wego.js?v=21"></script><script src="case-navigation.js?v=1"></script><script src="hero-image-entry.js?v=2"></script><script src="eye-language.js?v=1"></script></body></html>

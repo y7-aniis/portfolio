@@ -1,0 +1,67 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#222;background:#fff;font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}header{height:103px;max-width:1440px;margin:auto;padding:22px 5%;display:flex;align-items:center;justify-content:space-between}.brand img{display:block;width:58px;height:58px;border-radius:50%}.header-actions{display:flex;gap:35px;align-items:center}header nav{display:flex;gap:50px;font-size:14px;font-weight:500}header nav a:hover{text-decoration:underline;text-underline-offset:8px}.language{display:flex;border:1px solid #111;border-radius:20px;overflow:hidden}.language button{border:0;background:white;padding:7px 10px;font:400 11px Inter,Arial,sans-serif;cursor:pointer}.language button[aria-pressed=true]{background:#111;color:#fff}a:focus-visible,button:focus-visible{outline:2px solid #777;outline-offset:5px}main{max-width:1080px;padding:65px 40px 70px;margin:auto}.eyebrow{font-size:11px;letter-spacing:1.7px;color:#888;margin:0 0 25px}h1{font-size:clamp(32px,4vw,46px);font-weight:400;letter-spacing:-1.2px;margin:0 0 26px}.intro-copy{max-width:680px}.intro-copy p{font-size:17px;line-height:1.85;color:#555;font-weight:300;margin:0 0 16px}.intro{margin-bottom:60px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 28px}.photo-group{min-width:0}.photo-group h2{display:flex;align-items:baseline;gap:12px;font-size:13px;font-weight:400;margin:0 0 13px;color:#555}.photo-group h2 span,.photo-group h2 i{font-style:normal;color:#999;font-weight:400}.photo-group h2 b{font-weight:400}.photo-grid{display:grid;gap:20px;grid-template-columns:repeat(2,minmax(0,1fr))}figure{margin:0;min-width:0}figure img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;background:#f7f7f7}figcaption{color:#888;font-size:11px;line-height:1.5;margin-top:10px}.me .photo-grid,.work-photo .photo-grid{grid-template-columns:1fr}.me img{object-position:46% center}.work-photo img{object-position:center}.sports,.baking,.community,.adventures{grid-column:1/-1}.sports img{aspect-ratio:4/3}.sports figure:nth-child(2) img{object-position:center 42%}.baking img{aspect-ratio:4/3}.community .photo-grid{grid-template-columns:1fr}.community img{aspect-ratio:auto;object-fit:contain}.adventures .photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.adventures img{aspect-ratio:3/4}.photo-group.reveal{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}.photo-group.reveal.visible{opacity:1;transform:none}#contact{max-width:1080px;margin:auto;border-top:1px solid #eee}#contact .back-top{font-weight:400}@media(max-width:900px){header{height:85px;padding:16px 6%}.brand img{width:45px;height:45px}header nav{gap:22px;font-size:12px}main{padding:45px 6% 50px}}@media(max-width:600px){.header-actions{gap:15px}header nav{gap:15px}.language button{padding:7px;font-size:10px}.intro-copy p{font-size:16px}.gallery{gap:32px 16px}.photo-grid{gap:14px}.photo-group h2{gap:8px;font-size:12px}.adventures .photo-grid{grid-template-columns:1fr 1fr}.adventures figure:last-child{grid-column:1/-1}.adventures figure:last-child img{aspect-ratio:4/3}.sports img{aspect-ratio:3/4}.baking img{aspect-ratio:3/4}.intro{margin-bottom:40px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.photo-group.reveal{opacity:1;transform:none;transition:none}}
+/* Varied photo proportions, with a consistent underlying column grid. */
+.gallery{grid-template-columns:repeat(12,minmax(0,1fr));gap:56px 24px;align-items:start}
+.me{grid-column:1/6}
+.work-photo{grid-column:8/13;margin-top:70px}
+.me img{aspect-ratio:4/5;object-position:46% center}
+.work-photo img{aspect-ratio:3/4}
+.sports{grid-column:1/-1}
+.sports .photo-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
+.sports figure:first-child{grid-column:1/8}
+.sports figure:first-child img{aspect-ratio:1.975;object-fit:contain}
+.sports figure:nth-child(2){grid-column:9/13;margin-top:44px}
+.sports figure:nth-child(2) img{aspect-ratio:3/4;object-position:center}
+.baking{grid-column:1/8}
+.baking .photo-grid{grid-template-columns:1.15fr 1fr;align-items:start;gap:24px}
+.baking figure:first-child img{aspect-ratio:3/4}
+.baking figure:nth-child(2){margin-top:55px}
+.baking figure:nth-child(2) img{aspect-ratio:1}
+.community{grid-column:9/13;margin-top:110px}
+.community img{aspect-ratio:auto}
+.adventures{grid-column:1/-1}
+.adventures .photo-grid{grid-template-columns:repeat(12,minmax(0,1fr));align-items:start;gap:24px}
+.adventures figure:first-child{grid-column:1/7}
+.adventures figure:first-child img{aspect-ratio:4/3}
+.adventures figure:nth-child(2){grid-column:8/13;margin-top:64px}
+.adventures figure:nth-child(2) img{aspect-ratio:3/4}
+.adventures figure:last-child{grid-column:3/8;margin-top:-80px}
+.adventures figure:last-child img{aspect-ratio:4/3}
+@media(max-width:700px){
+ .gallery{gap:36px 16px}
+ .me{grid-column:1/7}.work-photo{grid-column:8/13;margin-top:46px}
+ .sports .photo-grid,.adventures .photo-grid{gap:16px}
+ .sports figure:first-child{grid-column:1/8}.sports figure:nth-child(2){grid-column:9/13;margin-top:28px}
+ .baking{grid-column:1/-1}.baking .photo-grid{grid-template-columns:1fr 1fr;gap:20px}.baking figure:nth-child(2){margin-top:38px}
+ .community{grid-column:3/13;margin-top:0}
+ .adventures figure:nth-child(2){margin-top:35px}
+ .adventures figure:last-child{grid-column:2/8;margin-top:-20px}
+}
+@media(max-width:420px){
+ .photo-group h2{gap:5px;font-size:11px}
+ .work-photo{grid-column:7/13}
+ .sports figure:first-child{grid-column:1/9}.sports figure:nth-child(2){grid-column:7/13;margin-top:0}
+ .adventures figure:last-child{margin-top:0}
+}
+
+/* Match the D&D / WEGO / HeatGuard header interaction styles. */
+header{color:#111;background:#fff}
+header .brand img{display:inline}
+header .language button{font:inherit;font-size:11px;color:#111;cursor:pointer}
+header .language button[aria-pressed=true]{color:#fff}
+header button,header a{-webkit-tap-highlight-color:transparent}
+header button:focus-visible,header a:focus-visible{outline:3px solid #aa234e;outline-offset:5px}
+@media(max-width:600px){header .language button{font-size:10px}}
+
+/* A two-sided print piece, kept in the same editorial photo grid. */
+.business-card{grid-column:7/13;margin-top:12px;width:100%;max-width:350px;justify-self:end}
+.card-flip{display:block;width:100%;aspect-ratio:463/304;padding:0;border:0;background:transparent;cursor:pointer;perspective:1200px;text-align:inherit;-webkit-tap-highlight-color:transparent}
+.card-turn{display:block;position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform 650ms cubic-bezier(.2,.65,.25,1)}
+.card-flip.is-flipped .card-turn{transform:rotateY(180deg)}
+.card-face{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.card-back{transform:rotateY(180deg)}
+.card-face img{position:absolute;width:121.5983%;max-width:none;height:132.8947%;left:-11.8791%;top:-17.7632%;aspect-ratio:auto;object-fit:fill;background:transparent}
+.card-flip:focus-visible{outline:2px solid #777;outline-offset:7px}
+.card-accessible{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:700px){.business-card{grid-column:4/13;margin-top:0}}
+@media(max-width:420px){.business-card{grid-column:2/13}}
+@media(prefers-reduced-motion:reduce){.card-turn{transition:none}}

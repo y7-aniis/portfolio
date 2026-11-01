@@ -1,0 +1,19 @@
+.eye-language{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:50;text-align:center;opacity:.65;transition:opacity 180ms ease}
+.eye-language:hover,.eye-language:focus-within{opacity:1}
+.eye-shell{position:relative;width:64px;height:38px;display:flex;align-items:center;justify-content:center;gap:4px}
+.eye-outline{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.eye-outline .eye-paper{fill:#fffffff0;stroke:none}
+.eye-outline .eye-grain-outline{fill:url(#eye-grain);fill-opacity:.13;stroke:#999;stroke-width:1.5;stroke-dasharray:.8 1.1;stroke-linecap:round}
+.eye-shell button{position:relative;z-index:2;display:grid;place-items:center;width:20px;height:24px;border:0;background:transparent;border-radius:50%;font:400 8px Inter,Arial,sans-serif;color:#888;cursor:pointer;padding:0;transition:color 200ms ease}
+.eye-shell button[aria-pressed=true]{color:#fff}
+.eye-shell button:focus-visible{outline:2px solid #777;outline-offset:4px}
+.eye-pupil{position:absolute;z-index:1;width:20px;height:20px;left:10px;top:9px;background:#111;border-radius:50%;transition:transform 220ms cubic-bezier(.2,.7,.2,1)}
+.eye-language.is-chinese .eye-pupil{transform:translateX(24px)}
+.eye-hint{display:block;margin-top:4px;font:400 9px Inter,Arial,sans-serif;letter-spacing:.5px;color:#888;opacity:0;transition:opacity 180ms ease}
+.eye-language:hover .eye-hint,.eye-language:focus-within .eye-hint{opacity:1}
+@media(min-width:1200px){.eye-language{left:max(18px,calc((100vw - 1220px)/2 - 40px))}}
+@media(max-width:1199px){.eye-language{left:8px;top:auto;bottom:22px;transform:none}.eye-hint{display:none}}
+@media(prefers-reduced-motion:reduce){.eye-language,.eye-pupil,.eye-hint,.eye-shell button{transition:none}}
+
+/* Keep the language eye near the viewport edge on all screen sizes. */
+.eye-language{left:4px}

@@ -1,0 +1,9 @@
+/* Align reading content; keep the hero and horizontal gallery unchanged. */
+.work-heading,.project-list,.gallery-footer,.progress{width:100%;max-width:1040px;margin-left:auto;margin-right:auto}
+.about{padding-left:max(40px,calc((100vw - 1040px)/2));padding-right:max(40px,calc((100vw - 1040px)/2))}
+.about-copy{padding-left:0;padding-right:0;max-width:740px}
+#contact{padding-left:max(40px,calc((100vw - 1040px)/2));padding-right:max(40px,calc((100vw - 1040px)/2))}
+@media(max-width:800px){.about,#contact{padding-left:6%;padding-right:6%}.work-pin{padding-left:6%;padding-right:6%}}
+/* A quieter scale for the homepage About introduction. */
+.about-copy h2,.about-copy p{font-size:26px}
+@media(max-width:760px){.about-copy h2,.about-copy p{font-size:20px}}

@@ -1,0 +1,59 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#111;font-family:Inter,Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}header{height:145px;padding:38px 5%;display:flex;align-items:center;justify-content:space-between;position:relative}nav{display:flex;gap:5vw;font:500 24px 'Archivo Narrow',Arial,sans-serif}.logo{position:absolute;left:50%;transform:translateX(-50%)}.logo img{width:70px;height:70px;border-radius:50%}.language{display:flex;border:1px solid;border-radius:30px;overflow:hidden}.language button{border:0;background:white;padding:5px 12px;font-size:13px}.language button.active{background:#111;color:#fff}.hero{height:900px;position:relative;overflow:hidden}.intro{position:absolute;top:50px;left:5%;z-index:1;pointer-events:none}.intro p{font-size:28px;margin:12px 0}.intro h1{font-size:clamp(32px,4.5vw,65px);font-weight:400;letter-spacing:-2px;margin:0}#eyes{position:absolute;inset:0;width:100%;height:100%}.eyes-note{position:absolute;top:72%;width:100%;text-align:center;color:#888;font-size:15px}.hero-bottom{position:absolute;bottom:90px;left:5%;right:5%;display:flex;justify-content:space-between;color:#888;font-size:15px}.work{position:relative;scroll-margin-top:0}.work-pin{position:sticky;top:0;background:white;padding:34px 5% 22px;overflow:hidden;min-height:100svh;display:flex;flex-direction:column;justify-content:center}.work-heading p{font-size:15px;margin:0 0 9px}.work-heading h2{font-size:40px;font-weight:400;margin:0 0 20px}.project-list{border-top:1px solid #777;padding-top:15px;max-width:100%}.project-row{display:flex;align-items:center;justify-content:space-between;min-height:34px;font-size:17px}.tags{display:flex;gap:10px}.tag{border:1px solid #111;border-radius:30px;font-size:12px;min-width:100px;padding:3px 12px;text-align:center;transition:background .2s,color .2s}.tag:hover{background:#111;color:white}.gallery-window{margin-top:30px;overflow:visible}.gallery{display:flex;gap:32px;will-change:transform}.project-card{flex:0 0 min(31vw,420px);min-width:0}.cover{height:clamp(180px,29vh,330px);position:relative;background:#f2f2f2;border-radius:10px;overflow:hidden}.cover img{width:100%;height:100%;object-fit:contain;filter:grayscale(1);transition:filter .65s;display:block}.project-card:hover img,.project-card:focus-visible img{filter:grayscale(0)}.halftone{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.view{position:absolute;bottom:15px;left:15px;border-radius:24px;background:#111;color:white;padding:10px 15px;font-size:11px;opacity:0;transform:translateY(8px);transition:.35s}.project-card:hover .view,.project-card:focus-visible .view{opacity:1;transform:none}.card-caption{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding-top:13px}.card-caption h3{font-size:16px;font-weight:400;margin:0}.card-caption>span{font-size:10px;color:#777}.gallery-footer{display:flex;justify-content:space-between;margin-top:25px;color:#888;font-size:11px;gap:15px}.progress{height:1px;background:#ddd;margin-top:16px}.progress span{display:block;background:#111;height:1px;width:20%}.about{background:#050505;color:#fff;min-height:900px;position:relative;overflow:hidden;padding:35px 5% 100px}.section-note{color:#888;font-size:16px}.flower{position:absolute;width:48%;right:-7%;top:-8%;pointer-events:none}.about-copy{position:relative;max-width:820px;padding:240px 5% 60px}.about-copy h2,.about-copy p{font-size:30px;line-height:1.7;font-weight:300;margin:0}.about-copy p{color:#ccc}.about-copy a{display:inline-block;margin-top:65px;font-size:19px}footer{padding:55px 5% 100px;position:relative;min-height:320px}footer p{font-size:32px;line-height:1.5;margin:0}footer>a{font-size:23px}.back-top{position:absolute;right:5%;bottom:35px;font-size:13px}a:focus-visible,button:focus-visible,.gallery-window:focus-visible{outline:2px solid #888;outline-offset:5px}.detail{padding:7%;max-width:1100px;margin:auto}.detail h1{font-size:60px;font-weight:400}.detail>img{max-height:65vh;max-width:100%;display:block;margin:40px auto}.detail>p{line-height:1.7}
+@media(max-height:750px) and (min-width:761px){.work-pin{padding-top:18px}.work-heading h2{font-size:30px;margin-bottom:12px}.project-row{min-height:29px}.gallery-window{margin-top:20px}.cover{height:25vh}.gallery-footer{margin-top:15px}}
+@media(max-width:760px){header{height:100px;padding:20px 5%}nav{gap:17px;font-size:16px}.logo{left:40%}.logo img{width:40px;height:40px}.language button{padding:4px 7px;font-size:10px}.hero{height:680px}.intro{top:35px}.intro p{font-size:17px}.intro h1{font-size:34px;letter-spacing:-1px}.eyes-note{font-size:10px}.hero-bottom{font-size:10px;bottom:60px}.work-pin{padding:28px 5%}.work-heading h2{font-size:30px}.work-heading p{font-size:11px}.project-row{font-size:13px;min-height:38px}.tag{min-width:0;font-size:9px;padding:3px 7px}.tags{gap:4px}.project-card{flex-basis:78vw}.cover{height:28vh}.gallery{gap:20px}.gallery-footer{font-size:8px}.gallery-footer span:nth-child(3),.gallery-footer span:nth-child(4){display:none}.about{min-height:740px}.flower{width:70%;right:-18%;top:0}.about-copy{padding:230px 0 30px}.about-copy h2,.about-copy p{font-size:23px}.detail h1{font-size:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work{height:auto!important}.work-pin{position:relative;min-height:0}.gallery-window{overflow-x:auto}.gallery{transform:none!important}.project-card img{filter:none}.halftone{display:none}.cover img,.view{transition:none}}
+
+.project-card:first-child .cover{background:#f2f2f2}.project-list{border-top:0;background:url('assets/home-v3/e663b.svg') top left/100% 1px no-repeat}
+
+/* Scroll-controlled unfolding preserves the original halftone artwork. */
+.flower{aspect-ratio:1;--bloom:0;isolation:isolate}
+.flower-petal,.flower-center{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform-origin:50% 50%}
+.flower-petal{transform:rotate(calc(var(--fold) * (1 - var(--bloom)))) scaleX(calc(.25 + var(--bloom) * .75)) scaleY(calc(.65 + var(--bloom) * .35));will-change:transform}
+.flower-center{clip-path:circle(12% at 50% 50%);transform:scale(calc(.65 + var(--bloom) * .35))}
+@media(prefers-reduced-motion:reduce){.flower{--bloom:1}.flower-petal{will-change:auto}}
+
+.about-copy p{color:inherit;opacity:.82}.reveal-line{display:block;will-change:opacity,transform}.flower{display:block;cursor:pointer;transform-origin:50% 50%;pointer-events:auto}.flower img{pointer-events:none}.flower:focus-visible{outline:2px solid currentColor;outline-offset:6px}.about,.work-pin{transition:none}.about .section-note{color:inherit;opacity:.55}@media(prefers-reduced-motion:reduce){.reveal-line{opacity:1!important;transform:none!important}.flower{rotate:0deg!important}.work-heading{opacity:1!important}}
+.work-pin .tag{border-color:currentColor}.reveal-line{white-space:normal}.about-copy{z-index:1}.flower{z-index:2}.flower-center,.flower-petal{pointer-events:none}
+
+/* Original-color Figma covers; grayscale is applied only to the idle state. */
+.cover:has(.color-orchardtrack),.cover:has(.color-heatguard){isolation:isolate}
+.cover .color-orchardtrack,.cover .color-heatguard{object-fit:cover}
+.cover .color-orchardtrack{object-position:30.39% center}
+.cover .color-heatguard{object-position:48.78% center}
+/* Gentle floating motion for the hero headline. */
+@keyframes hero-headline-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+.hero .intro h1 { animation: hero-headline-float 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .hero .intro h1 { animation: none; }
+}
+/* Navigation and project-list feedback. */
+header nav a{position:relative;display:inline-block;transition:transform .25s ease}
+header nav a::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+header nav a:hover,header nav a:focus-visible{transform:translateY(-2px)}
+header nav a:hover::after,header nav a:focus-visible::after{transform:scaleX(1)}
+.project-row{border-radius:4px;transition:background-color .25s,color .25s;gap:12px}
+.project-row>span:first-child{transition:transform .25s ease}
+.project-row:hover,.project-row:focus-visible{background:#111;color:#fff}
+.project-row:hover>span:first-child,.project-row:focus-visible>span:first-child{transform:translateX(8px)}
+.project-row .tags{padding-right:6px}
+.typing-copy{display:inline-block;white-space:pre}
+.typing-cursor{display:inline-block;width:1px;height:1em;background:currentColor;margin-left:4px;vertical-align:-.1em;animation:typing-caret .7s step-end infinite}
+.typing-done .typing-cursor{display:none}
+@keyframes typing-caret{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){header nav a,header nav a::after,.project-row,.project-row>span:first-child,.project-row>span:first-child::after{transition:none}.typing-cursor{display:none}}
+
+/* Navigation shared with the D&D case study. */
+body>header nav{font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:500;gap:50px}body>header nav a:hover,body>header nav a:focus-visible{transform:none;text-decoration:underline;text-underline-offset:8px}body>header nav a::after{display:none}@media(max-width:900px){body>header nav{font-size:12px;gap:22px}}
+/* Quiet homepage language switch; stays in the scrolling header. */
+body>header .language{border:0;border-radius:0;overflow:visible;align-items:center;gap:9px}
+body>header .language::before{content:'/';order:1;color:#aaa;font-size:11px}
+body>header .language button{background:transparent;color:#999;padding:5px 0;font:400 11px Inter,Arial,sans-serif;position:relative;cursor:pointer}
+body>header .language button:first-child{order:0}
+body>header .language button:last-child{order:2}
+body>header .language button.active{background:transparent;color:#333}
+body>header .language button::after{content:'';position:absolute;left:0;right:0;bottom:1px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 180ms ease}
+body>header .language button:hover::after,body>header .language button:focus-visible::after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){body>header .language button::after{transition:none}}

@@ -1,0 +1,8 @@
+.case-chapter-nav{top:0;z-index:30;gap:30px;padding:18px 5%;font-size:12px;background:#fffffff2;border-bottom:1px solid #ddd;justify-content:center;scrollbar-width:none}
+.case-chapter-nav::-webkit-scrollbar{display:none}
+.case-chapter-nav a{font-weight:400;transition:color .2s}
+.case-chapter-nav a.active{color:#aa234e}
+.case-chapter-nav a:hover{color:#aa234e}
+main>section[id]{scroll-margin-top:64px}
+@media(max-width:900px){.case-chapter-nav{justify-content:flex-start;gap:24px;overflow-x:auto;padding:16px 6%;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.case-chapter-nav a{transition:none}}
