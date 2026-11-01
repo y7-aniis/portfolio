@@ -14,3 +14,14 @@
 body{background:#fff;color:#111}.hero{background:#050505}.hero-transition{background:#fff}.hero .kicker{color:#aaa}.hero-text>p{color:#ddd}.chapter-nav{background:#ffffffed;border-color:#ddd}.section{border-color:#ddd}h2{font-family:Inter,Arial,sans-serif;font-weight:400;letter-spacing:-1.2px}.feature-copy h3,.iteration h3,.tradeoff h3,.supporting-heading h3{font-family:Inter,Arial,sans-serif;font-weight:400;letter-spacing:-.6px}.question{font-family:Inter,Arial,sans-serif;font-weight:400;color:#111}.scene-caption strong{font-family:Inter,Arial,sans-serif}.section>.kicker,.decision>span,.next>span,.relationship span,.decision-chain span,.anatomy-notes span{color:#666}.demo,.early-demo .demo,.relationship,.anatomy,.reward-iteration{background:#f2f2f2}.anatomy-notes button[aria-pressed=true]{background:#fff}.story-track .interruption,.story-track.in-view .interruption{background:#f2f2f2;border-color:#111}.interruption span{color:#555}.table-head,.story-track span{color:#777}.insight-table article,.table-head,.feature,.iteration,.supporting,.next{border-color:#ddd}.anatomy-notes button{border-left-color:#ccc}.hero h1{color:#fff}.scene-caption{color:#fff}
 
 .header-actions{display:flex;align-items:center;gap:35px}.language{display:flex;border:1px solid #111;border-radius:20px;overflow:hidden}.language button{border:0;background:white;color:#111;padding:7px 10px;font-size:11px}.language button[aria-pressed=true]{background:#111;color:#fff}html[lang="zh-CN"] h2,html[lang="zh-CN"] h3{line-height:1.5;letter-spacing:0}@media(max-width:600px){.header-actions{gap:15px}header nav{gap:15px}.language button{padding:7px;font-size:10px}}
+
+/* Keep the spell and its explanations together on narrow screens. */
+@media(max-width:600px){
+ #solutions .anatomy{grid-template-columns:minmax(90px, .7fr) minmax(0, 1.3fr);padding:16px 12px;gap:14px;align-items:start}
+ #solutions .anatomy-visual{max-width:140px;position:sticky;top:76px;border-radius:18px}
+ #solutions .anatomy-notes{gap:10px;min-width:0}
+ #solutions .anatomy-notes button{padding:10px 8px;min-height:0}
+ #solutions .anatomy-notes span{font-size:9px;letter-spacing:.7px}
+ #solutions .anatomy-notes strong{font-size:15px;line-height:1.35;margin:8px 0}
+ #solutions .anatomy-notes p{font-size:12px;line-height:1.6}
+}

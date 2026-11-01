@@ -87,3 +87,13 @@
 @media(max-width:650px){
  .wego-challenge>h2,.wego-direction>h2,.wego-discovery>h2,.wego-matching>h2,.wego-onboarding>h2,.wego-testing>h2,.wego-reflection>h2{font-size:26px;letter-spacing:-.4px}
 }
+
+/* Allow the mobile flow grid to shrink below the step strip's intrinsic width. */
+@media(max-width:650px){
+ #matching .buddy-film{grid-template-columns:minmax(0,1fr);min-width:0}
+ #matching .film-story{min-width:0;max-width:100%}
+ #matching .film-steps{min-width:0;max-width:100%}
+ #matching .film-steps li{flex:0 0 115px}
+ #matching .film-device{min-width:0;width:100%;max-width:300px;justify-self:center;margin-inline:auto}
+ #matching .film-phone{width:100%;max-width:100%}
+}

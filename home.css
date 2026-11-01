@@ -57,3 +57,12 @@ body>header .language button.active{background:transparent;color:#333}
 body>header .language button::after{content:'';position:absolute;left:0;right:0;bottom:1px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform 180ms ease}
 body>header .language button:hover::after,body>header .language button:focus-visible::after{transform:scaleX(1)}
 @media(prefers-reduced-motion:reduce){body>header .language button::after{transition:none}}
+
+/* Mobile homepage: uncluttered navigation and separate text / eye space. */
+@media(max-width:600px){
+ body>header{border-bottom:1px solid #e8e8e8}
+ body>header .logo{display:none}
+ #home .intro{top:24px}
+}
+
+@media(max-width:600px){body>header{height:68px;padding:12px 5%}}

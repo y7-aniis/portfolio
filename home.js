@@ -13,7 +13,12 @@ const canvas=document.querySelector('#eyes'),ctx=canvas.getContext('2d'),eye=new
 let W=0,H=0,mx=0,my=0,px=0,py=0,nextBlink=performance.now()+5000,blinkStart=-10000;
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 function resizeEyes(){W=canvas.clientWidth;H=canvas.clientHeight;canvas.width=W*devicePixelRatio;canvas.height=H*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);}
-function geometry(){const s=Math.min(W*.51,730);return {s,y:H*.16,x:W/2};}
+const heroIntro=document.querySelector('#home .intro');
+let heroIntroBottom=0;
+function measureHeroIntro(){heroIntroBottom=heroIntro.offsetTop+heroIntro.offsetHeight;}
+new ResizeObserver(measureHeroIntro).observe(heroIntro);
+addEventListener('resize',measureHeroIntro);document.fonts.ready.then(measureHeroIntro);measureHeroIntro();
+function geometry(){const s=Math.min(W*.51,730);const y=W<=600?Math.max(H*.24,heroIntroBottom+32-s*.25):H*.16;return {s,y,x:W/2};}
 eye.onload=resizeEyes;addEventListener('resize',resizeEyes);resizeEyes();
 addEventListener('pointermove',e=>{mx=clamp((e.clientX-innerWidth/2)/(innerWidth/2),-1,1);my=clamp((e.clientY-innerHeight/2)/(innerHeight/2),-1,1);});document.addEventListener('pointerleave',()=>{mx=0;my=0;});
 function drawEye(x,y,s,flip,blink){ctx.save();ctx.translate(x+(flip?s:0),y+s*.5);ctx.scale(flip?-1:1,1-blink*.96);ctx.translate(0,-s*.5);ctx.drawImage(eye,0,0,s,s);/* Pupil is clipped inside the central eye region; exterior is stationary. */ctx.save();ctx.beginPath();ctx.ellipse(s*.42,s*.45,s*.085,s*.062,0,0,Math.PI*2);ctx.clip();ctx.fillStyle='white';ctx.fillRect(s*.32,s*.37,s*.2,s*.17);ctx.drawImage(eye,(flip?-px:px)*s*.014,py*s*.01,s,s);ctx.restore();ctx.restore();}

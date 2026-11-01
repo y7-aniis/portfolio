@@ -14,3 +14,6 @@ footer.project-footer a:focus-visible{outline:2px solid var(--footer-accent,#333
 @media(max-width:600px){footer.project-footer{gap:8px;font-size:11px}}
 @media(max-width:360px){footer.project-footer{font-size:10px;gap:4px}footer.project-footer .footer-breadcrumb{gap:6px}}
 @media(prefers-reduced-motion:reduce){footer.project-footer a{transition:none}}
+
+/* Lift the language control above the project footer links on compact screens. */
+@media(max-width:1199px){.eye-language{bottom:calc(88px + env(safe-area-inset-bottom, 0px))}}
