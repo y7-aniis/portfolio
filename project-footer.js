@@ -1,0 +1,1 @@
+(()=>{const links=document.querySelectorAll('[data-footer-en]');function update(){const zh=document.documentElement.lang.startsWith('zh');links.forEach(a=>{const text=zh?a.dataset.footerZh:a.dataset.footerEn;if(a.textContent!==text)a.textContent=text;});}update();new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});})();
