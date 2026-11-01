@@ -1,0 +1,7 @@
+/* Consistent, non-clickable discipline tags on case-study heroes. */
+body .project-tags.project-tags{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:28px 0 0;--tag-ink:#444;--tag-border:#aaa;--tag-hover-bg:#111;--tag-hover-ink:#fff}
+body .project-tags.project-tags-dark{--tag-ink:#ddd;--tag-border:#777;--tag-hover-bg:#fff;--tag-hover-ink:#111}
+body .project-tags.project-tags>span{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--tag-border);border-radius:999px;padding:7px 12px;margin:0;background:transparent;color:var(--tag-ink);font-family:Inter,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.4;letter-spacing:0;cursor:default;transition:background-color .2s ease,color .2s ease,border-color .2s ease;transform:none;box-shadow:none}
+@media(hover:hover){body .project-tags.project-tags>span:hover{background:var(--tag-hover-bg);color:var(--tag-hover-ink);border-color:var(--tag-hover-bg)}}
+@media(max-width:600px){body .project-tags.project-tags{gap:8px;margin-top:24px}body .project-tags.project-tags>span{font-size:11px;padding:7px 12px}}
+@media(prefers-reduced-motion:reduce){body .project-tags.project-tags>span{transition:none}}
