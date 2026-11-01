@@ -1,1 +1,16 @@
-footer.project-footer{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;max-width:1120px;margin:0 auto;padding:32px 40px 40px;border:0;background:#fff;color:#777;font-family:Inter,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.6;letter-spacing:0;text-align:left}footer.project-footer>.project-footer-name{width:auto;flex-shrink:0}.project-footer-links{display:flex;align-items:center;gap:28px;flex-wrap:wrap}footer.project-footer a{position:relative;display:inline-block;color:#777;font:inherit;text-decoration:none;padding:4px 0;min-height:0}footer.project-footer a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .2s ease}footer.project-footer a:hover::after,footer.project-footer a:focus-visible::after{transform:scaleX(1)}footer.project-footer a:focus-visible{outline:2px solid #777;outline-offset:5px}@media(max-width:900px){footer.project-footer{padding:28px 6% 36px}}@media(max-width:600px){footer.project-footer{align-items:flex-start;flex-direction:column;gap:12px}.project-footer-links{gap:24px}}@media(prefers-reduced-motion:reduce){footer.project-footer a::after{transition:none}}
+/* Shared project navigation: project colour is set on the footer. */
+footer.project-footer{box-sizing:border-box;display:grid;grid-template-columns:auto auto;align-items:center;gap:16px;width:100%;max-width:1120px;margin:0 auto;padding:32px 40px 40px;border:0;background:#fff;color:#777;font-family:Inter,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.6;letter-spacing:0;text-align:left;position:relative}
+footer.project-footer::before{content:"";position:absolute;top:0;left:40px;right:40px;border-top:1px solid #ddd}
+footer.project-footer .footer-breadcrumb{display:flex;align-items:center;gap:10px;min-width:0}
+footer.project-footer .footer-slash{color:#bbb}
+footer.project-footer .footer-current{color:#333}
+footer.project-footer a{display:inline-block;font:inherit;text-decoration:none;border:0;background:none;padding:4px 0;white-space:nowrap;transition:color .2s ease}
+footer.project-footer .footer-all{color:#999}
+footer.project-footer .footer-next{justify-self:end;color:#777}
+footer.project-footer a::after{display:none}
+footer.project-footer a:hover,footer.project-footer a:focus-visible{color:var(--footer-accent,#333);text-decoration:none}
+footer.project-footer a:focus-visible{outline:2px solid var(--footer-accent,#333);outline-offset:5px}
+@media(max-width:900px){footer.project-footer{padding:28px 6% 36px}footer.project-footer::before{left:6%;right:6%}}
+@media(max-width:600px){footer.project-footer{gap:8px;font-size:11px}}
+@media(max-width:360px){footer.project-footer{font-size:10px;gap:4px}footer.project-footer .footer-breadcrumb{gap:6px}}
+@media(prefers-reduced-motion:reduce){footer.project-footer a{transition:none}}
